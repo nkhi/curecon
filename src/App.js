@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-// import Navigation from './components/homepage/navigation'
+// import Header from './components/homepage/header'
 // import Landing from './components/homepage/landing'
 // import Map from './components/homepage/map'
 // import Timeline from './components/homepage/timeine'
@@ -13,20 +12,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          CURECON: COVID-19 University Response Consolidation <br/><br/> <code>Coming soon.</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-      {/* <Navigation/>
+      
+      {/* <Header/>
       <Landing/>
       <Map/>
       <Timeline/>
