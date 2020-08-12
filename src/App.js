@@ -2,6 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// import Navigation from './components/homepage/navigation'
+// import Landing from './components/homepage/landing'
+// import Map from './components/homepage/map'
+// import Timeline from './components/homepage/timeine'
+// import SchoolsList from '../components/homepage/schoolsList'
+// import Footer from '../components/homepage/footer'
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +26,12 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <Navigation/>
+      <Landing/>
+      <Map/>
+      <Timeline/>
+      <SchoolsList/>
+      <Footer/> */}
     </div>
   );
 }
