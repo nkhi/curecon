@@ -1,3 +1,3 @@
 import Header from './header'
 
-export const Header
+export default Header

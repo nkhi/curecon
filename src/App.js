@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+import {
+  Layout,
+} from './AppStyles.js';
 
-// import Header from './components/homepage/header'
+import Header from './components/homepage/header'
 // import Landing from './components/homepage/landing'
 // import Map from './components/homepage/map'
 // import Timeline from './components/homepage/timeine'
@@ -10,21 +12,29 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    </head>
+    <Layout>
+      {/* <Header>
         <p>
-          CURECON: COVID-19 University Response Consolidation <br/><br/> <code>Coming soon.</code>
+          CURECON: COVID-19 University Response Consolidation
+          <br/><br/> 
+          <code>Coming soon.</code>
         </p>
-      </header>
+      </Header> */}
       
-      {/* <Header/>
-      <Landing/>
+      <Header/>
+      {/*<Landing/>
       <Map/>
       <Timeline/>
       <SchoolsList/>
       <Footer/> */}
-    </div>
-  );
+    </Layout>
+    </>
+  )
 }
 
 export default App;

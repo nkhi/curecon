@@ -1,10 +1,29 @@
 import React from 'react'
 
-const Header = () => {
-  const abc = 'Hello'
+//styles
+import {
+  NavigationContainer,
+  Left,
+  Right,
+  Link,
+  CureconText
+} from './headerStyles'
+
+const Header = ({}) => {
   return(
-    <div>{abc}</div>
+    <NavigationContainer>
+      <Left>
+        <CureconText>CURECON: COVID-19 University Response Consolidation</CureconText>
+      </Left>
+      <Right>
+        <Link href="#paper">PAPER</Link>
+        <Link href="#map">MAP</Link>
+        <Link href="#list">LIST</Link>
+        <Link href="#submit">SUBMIT</Link>
+        <Link href="/about">ABOUT</Link>
+      </Right>
+    </NavigationContainer>
   )
 }
 
-export const Header
+export default Header
