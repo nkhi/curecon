@@ -3,25 +3,30 @@ import React from 'react'
 //styles
 import {
   NavigationContainer,
-  Left,
-  Right,
-  Link,
-  CureconText
+  Chunk,
+  CureconText,
+  NavButton,
+  ButtonsContainer
 } from './headerStyles'
 
-const Header = ({}) => {
+const Header = ({ currentPage, setCurrentPage }) => {
   return(
     <NavigationContainer>
-      <Left>
-        <CureconText>CURECON: COVID-19 University Response Consolidation</CureconText>
-      </Left>
-      <Right>
-        <Link href="#paper">PAPER</Link>
-        <Link href="#map">MAP</Link>
-        <Link href="#list">LIST</Link>
-        <Link href="#submit">SUBMIT</Link>
-        <Link href="/about">ABOUT</Link>
-      </Right>
+
+      <Chunk>
+        <CureconText href="/">
+          CURECON: COVID-19 University Response Consolidation
+        </CureconText>
+      </Chunk>
+
+      <ButtonsContainer>
+        <NavButton variant="contained" color="primary" href="#map">MAP</NavButton>
+        <NavButton variant="contained" color="primary" href="#list">LIST</NavButton>
+        <NavButton variant="contained" color="primary" href="/paper">PAPER</NavButton>
+        <NavButton variant="contained" color="primary" href="/submit">SUBMIT</NavButton>
+        <NavButton variant="contained" color="primary" href="/about">ABOUT</NavButton>
+      </ButtonsContainer>
+
     </NavigationContainer>
   )
 }

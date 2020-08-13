@@ -12,20 +12,7 @@ import Header from './components/homepage/header'
 
 function App() {
   return (
-    <>
-    <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    </head>
-    <Layout>
-      {/* <Header>
-        <p>
-          CURECON: COVID-19 University Response Consolidation
-          <br/><br/> 
-          <code>Coming soon.</code>
-        </p>
-      </Header> */}
-      
+    <Layout>     
       <Header/>
       {/*<Landing/>
       <Map/>
@@ -33,7 +20,6 @@ function App() {
       <SchoolsList/>
       <Footer/> */}
     </Layout>
-    </>
   )
 }
 
