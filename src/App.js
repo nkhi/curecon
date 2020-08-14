@@ -15,9 +15,9 @@ function App() {
     <Layout>     
       <Header/>
       {/*<Landing/>
-      <Map/>
-      <Timeline/>
-      <SchoolsList/>
+      <Map id="map"/>
+      <Timeline id="timeline"/>
+      <SchoolsList id="list"/>
       <Footer/> */}
     </Layout>
   )

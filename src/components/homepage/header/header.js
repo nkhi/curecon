@@ -21,6 +21,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
 
       <ButtonsContainer>
         <NavButton variant="contained" color="primary" href="#map">MAP</NavButton>
+        <NavButton variant="contained" color="primary" href="#timeline">TIMELINE</NavButton>
         <NavButton variant="contained" color="primary" href="#list">LIST</NavButton>
         <NavButton variant="contained" color="primary" href="/paper">PAPER</NavButton>
         <NavButton variant="contained" color="primary" href="/submit">SUBMIT</NavButton>
