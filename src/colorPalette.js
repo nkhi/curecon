@@ -1,5 +1,5 @@
 export const mainCream = "#201826"
-export const whiteCream = "eae7da"
+export const whiteCream = "#eae7da"
 
 export const mainRed = "#e2223f"
 export const brickRed = "#BB3C36"

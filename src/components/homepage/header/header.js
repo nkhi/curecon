@@ -2,6 +2,7 @@ import React from 'react'
 
 //
 // import IconButton from '@material-ui/core/IconButton';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 //styles
 import {
@@ -13,6 +14,19 @@ import {
 } from './headerStyles'
 
 const Header = ({ currentPage, setCurrentPage }) => {
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: 'Source Sans Pro',
+      fontWeight: 600,
+      fontSize: 18,
+    },
+    overrides: {
+      MuiButton: {
+          color: 'white',
+        },
+      },
+  });
+
   return(
     <NavigationContainer>
 
@@ -23,12 +37,14 @@ const Header = ({ currentPage, setCurrentPage }) => {
       </Chunk>
 
       <ButtonsContainer>
-        <NavButton color="primary" href="#map">MAP</NavButton>
-        <NavButton olor="primary" href="#timeline">TIMELINE</NavButton>
-        <NavButton color="primary" href="#list">LIST</NavButton>
-        <NavButton color="primary" href="/paper">PAPER</NavButton>
-        <NavButton color="primary" href="/submit">SUBMIT</NavButton>
-        <NavButton color="primary" href="/about">ABOUT</NavButton>
+        <ThemeProvider theme={theme}>
+          <NavButton href="#map">MAP</NavButton>
+          <NavButton color="#eae7da" href="#timeline">TIMELINE</NavButton>
+          <NavButton color="#eae7da" href="#list">LIST</NavButton>
+          <NavButton color="#eae7da" href="/paper">PAPER</NavButton>
+          <NavButton color="#eae7da" href="/submit">SUBMIT</NavButton>
+          <NavButton color="#eae7da" href="/about">ABOUT</NavButton>
+        </ThemeProvider>
 
         {/* <IconButton aria-label="delete" disabled color="primary">
           🗺️📅

@@ -1,13 +1,14 @@
 // components
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
+import { mainBlue, whiteCream } from '../../../colorPalette'
 
 export const NavigationContainer = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  min-height: 8vh;
-  background-color: red;
+  min-height: 10vh;
+  background-color: ${mainBlue};
 `
 export const Chunk = styled.div`
   display: flex;
@@ -23,11 +24,18 @@ export const ButtonsContainer = styled.div`
 
 export const CureconText = styled.a`
   font-weight: 700;
-  font-size: 1.2em;
-  font-family: 'BioRhyme', serif;
+  font-size: 1.6em;
+  /* font-family: 'BioRhyme', serif; */
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
   text-align: left;
-  line-height: 0.95rem;
+  line-height: 2rem;
   text-decoration: none;
+  color: ${whiteCream};
+
+  &:hover{
+    font-style: normal;
+  }
 `
 
 export const NavButton = styled(Button)`

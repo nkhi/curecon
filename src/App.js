@@ -14,17 +14,10 @@ function App() {
   return (
     <Layout>
       <Header/>
-<<<<<<< HEAD
       <Landing/>
-      {/*<Map/>
-      <Timeline/>
-      <SchoolsList/>
-=======
-      {/*<Landing/>
-      <Map id="map"/>
+      {/*<Map id="map"/>
       <Timeline id="timeline"/>
       <SchoolsList id="list"/>
->>>>>>> ed6cb626f3c4805ca6e58c46cd317acdb268bc55
       <Footer/> */}
     </Layout>
   )
