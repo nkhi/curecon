@@ -4,7 +4,7 @@ import {
 } from './AppStyles.js';
 
 import Header from './components/homepage/header'
-// import Landing from './components/homepage/landing'
+import Landing from './components/homepage/landing'
 // import Map from './components/homepage/map'
 // import Timeline from './components/homepage/timeine'
 // import SchoolsList from '../components/homepage/schoolsList'
@@ -12,10 +12,10 @@ import Header from './components/homepage/header'
 
 function App() {
   return (
-    <Layout>     
+    <Layout>
       <Header/>
-      {/*<Landing/>
-      <Map/>
+      <Landing/>
+      {/*<Map/>
       <Timeline/>
       <SchoolsList/>
       <Footer/> */}
