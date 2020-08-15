@@ -1,5 +1,8 @@
 import React from 'react'
 
+//
+// import IconButton from '@material-ui/core/IconButton';
+
 //styles
 import {
   NavigationContainer,
@@ -15,16 +18,20 @@ const Header = ({ currentPage, setCurrentPage }) => {
 
       <Chunk>
         <CureconText href="/">
-          CURECON: COVID-19 University Response Consolidation
+          COVID-19 University <br/> Response Consolidation
         </CureconText>
       </Chunk>
 
       <ButtonsContainer>
-        <NavButton variant="contained" color="primary" href="#map">MAP</NavButton>
-        <NavButton variant="contained" color="primary" href="#list">LIST</NavButton>
-        <NavButton variant="contained" color="primary" href="/paper">PAPER</NavButton>
-        <NavButton variant="contained" color="primary" href="/submit">SUBMIT</NavButton>
-        <NavButton variant="contained" color="primary" href="/about">ABOUT</NavButton>
+        <NavButton color="primary" href="#map">MAP</NavButton>
+        <NavButton color="primary" href="#list">LIST</NavButton>
+        <NavButton color="primary" href="/paper">PAPER</NavButton>
+        <NavButton color="primary" href="/submit">SUBMIT</NavButton>
+        <NavButton color="primary" href="/about">ABOUT</NavButton>
+
+        {/* <IconButton aria-label="delete" disabled color="primary">
+          🗺️📅
+        </IconButton> */}
       </ButtonsContainer>
 
     </NavigationContainer>

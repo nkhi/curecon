@@ -6,13 +6,13 @@ export const NavigationContainer = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  height: 8vh;
+  min-height: 8vh;
   background-color: red;
 `
 export const Chunk = styled.div`
   display: flex;
   place-items: center;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 `
 
 export const ButtonsContainer = styled.div`
@@ -22,9 +22,12 @@ export const ButtonsContainer = styled.div`
 `
 
 export const CureconText = styled.a`
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.2em;
-  font-family: 'Roboto'; 
+  font-family: 'BioRhyme', serif;
+  text-align: left;
+  line-height: 0.95rem;
+  text-decoration: none;
 `
 
 export const NavButton = styled(Button)`
