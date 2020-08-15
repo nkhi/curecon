@@ -24,6 +24,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
 
       <ButtonsContainer>
         <NavButton color="primary" href="#map">MAP</NavButton>
+        <NavButton olor="primary" href="#timeline">TIMELINE</NavButton>
         <NavButton color="primary" href="#list">LIST</NavButton>
         <NavButton color="primary" href="/paper">PAPER</NavButton>
         <NavButton color="primary" href="/submit">SUBMIT</NavButton>
