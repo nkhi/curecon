@@ -10,6 +10,7 @@ import {
     Right,
     Subtext,
     ReadPaperButton,
+    TextSection,
     PaperPreview
 } from './landingStyles'
 import './searchStyles.css';
@@ -19,18 +20,16 @@ const Landing = ({}) => {
 
     <Layout>
       <Left>
-      
-        How well did your school respond to COVID-19?
-
-        <Subtext>
-          subtext blah blah blah blah blah blah
-        </Subtext>
+        <TextSection>      
+          How well did your school respond to COVID-19?
+          <Subtext> subtext blah blah blah blah blah blah </Subtext>
+        </TextSection>
         
         <ReadPaperButton>
           READ
         </ReadPaperButton>
         
-        <img src='../../../../public/examplePDF.png' alt='PDF'></img>
+        <PaperPreview src={require('./assets/examplePDF.png')} alt='PDF' />
       
       </Left>
 

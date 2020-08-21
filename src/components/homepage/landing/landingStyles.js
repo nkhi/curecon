@@ -27,3 +27,12 @@ export const Subtext = styled.div`
 export const ReadPaperButton = styled.button`
   background-color: ${mainYellow};
 `
+
+export const TextSection = styled.div`
+  display: flex;
+`
+
+export const PaperPreview = styled.img`
+  width: 20%;
+  height: 40%;
+`
