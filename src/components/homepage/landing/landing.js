@@ -1,46 +1,38 @@
 import React from 'react'
 
-// dependancies
-import SelectSearch from 'react-select-search';
+// components
+import SubmissionForm from '../../submissionForm'
 
 //styles
 import {
-    Layout
+    Layout,
+    Left,
+    Right,
+    Subtext,
+    ReadPaperButton,
+    PaperPreview
 } from './landingStyles'
 import './searchStyles.css';
 
 const Landing = ({}) => {
-//   const optionsList = [
-//                         {
-//                             name: 'Food',
-//                             type: 'group',
-//                             items: [{
-//                                 value: 'hamburger',
-//                                 name: 'Hamburger',
-//                             }, {
-//                                 value: 'pizza',
-//                                 name: 'Pizza',
-//                             }]
-//                         },
-//                         {
-//                             name: 'Drinks',
-//                             type: 'group',
-//                             items: [{
-//                                 value: 'soft',
-//                                 name: 'Soft drink',
-//                             }, {
-//                                 value: 'beer',
-//                                 name: 'Beer',
-//                             }]
-//                         }
-//                     ]
-
   return(
-    // <SelectSearch
-    //     options={optionsList}
-    // />
+
     <Layout>
-        <div>Hi this is the landing!</div>
+      <Left>
+        How well did your school respond to COVID-19?
+        <Subtext>
+          subtext blah blah blah blah blah blah
+        </Subtext>
+        <ReadPaperButton>
+          READ
+        </ReadPaperButton>
+        <PaperPreview src='../../../../assets/examplePDF.png' alt='' class='image'/>
+      </Left>
+
+      <Right>
+        <SubmissionForm/>
+      </Right>
+
     </Layout>
   )
 }

@@ -16,7 +16,7 @@ export const mainYellow = "#F6AF0E"
 export const dullYellow = "#E7B82B"
 
 export const mainGreen = "#11bf56"
-export const pineGreen = "#0F544E"
+export const pineGreen = "#177D52"
 export const jadeGreen = "#55A57D"
 
 export const mainPurple = "#201826"

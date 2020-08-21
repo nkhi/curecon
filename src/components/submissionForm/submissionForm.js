@@ -1,13 +1,15 @@
 import React from 'react'
 
 //styles
-import {} from './schoolsListStyles'
+import { Layout } from './submissionFormStyles'
 
-const SchoolsList = ({}) => {
+const SubmissionForm = ({}) => {
 
   return(
-
+    <Layout>
+      <div>Hello</div>
+    </Layout>
   )
 }
 
-export default SchoolsList
+export default SubmissionForm

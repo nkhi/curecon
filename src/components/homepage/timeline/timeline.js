@@ -1,13 +1,15 @@
 import React from 'react'
 
 //styles
-import {} from './schoolsListStyles'
+import { Layout } from './timelineStyles'
 
-const SchoolsList = ({}) => {
+const Timeline = ({}) => {
 
   return(
-
+    <Layout>
+      <div>This will be a timeline</div>
+    </Layout>
   )
 }
 
-export default SchoolsList
+export default Timeline
