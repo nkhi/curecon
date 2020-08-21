@@ -1,5 +1,7 @@
-export const mainCream = "#201826"
-export const whiteCream = "#eae7da"
+export const mainDark = "#201826"
+export const shade = "#1c1c1c"
+
+export const mainWhite = "#eae7da"
 
 export const mainRed = "#e2223f"
 export const brickRed = "#BB3C36"
@@ -8,6 +10,7 @@ export const mainBlue = "#104ca7"
 export const navyBlue = "#06065C"
 export const lightBlue = "#079DF5"
 export const lighterBlue = "#44D6EF"
+export const teal = "#13fbae"
 
 export const mainYellow = "#F6AF0E"
 export const dullYellow = "#E7B82B"

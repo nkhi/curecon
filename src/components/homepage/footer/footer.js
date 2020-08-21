@@ -1,13 +1,15 @@
 import React from 'react'
 
 //styles
-import {} from './schoolsListStyles'
+import { Layout } from './footerStyles'
 
-const SchoolsList = ({}) => {
+const Footer = ({}) => {
 
   return(
-
+    <Layout>
+      <div>This will be a footer</div>
+    </Layout>
   )
 }
 
-export default SchoolsList
+export default Footer

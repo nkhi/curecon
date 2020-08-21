@@ -1,7 +1,4 @@
 import React from 'react'
-
-//
-// import IconButton from '@material-ui/core/IconButton';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 //styles
@@ -20,11 +17,6 @@ const Header = ({ currentPage, setCurrentPage }) => {
       fontWeight: 600,
       fontSize: 18,
     },
-    overrides: {
-      MuiButton: {
-          color: 'white',
-        },
-      },
   });
 
   return(
@@ -46,9 +38,6 @@ const Header = ({ currentPage, setCurrentPage }) => {
           <NavButton color="#eae7da" href="/about">ABOUT</NavButton>
         </ThemeProvider>
 
-        {/* <IconButton aria-label="delete" disabled color="primary">
-          🗺️📅
-        </IconButton> */}
       </ButtonsContainer>
 
     </NavigationContainer>

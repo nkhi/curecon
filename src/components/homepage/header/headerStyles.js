@@ -1,7 +1,7 @@
 // components
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
-import { mainBlue, whiteCream } from '../../../colorPalette'
+import { mainBlue, mainWhite } from '../../../colorPalette'
 
 export const NavigationContainer = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ export const CureconText = styled.a`
   text-align: left;
   line-height: 2rem;
   text-decoration: none;
-  color: ${whiteCream};
+  color: ${mainWhite};
 
   &:hover{
     font-style: normal;
@@ -40,4 +40,5 @@ export const CureconText = styled.a`
 
 export const NavButton = styled(Button)`
   margin: 0.75rem;
+  color: ${mainWhite};
 `

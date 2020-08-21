@@ -1,13 +1,15 @@
 import React from 'react'
 
 //styles
-import {} from './schoolsListStyles'
+import { Layout } from './mapStyles'
 
-const SchoolsList = ({}) => {
+const Map = ({}) => {
 
   return(
-
+    <Layout>
+      <div>hi</div>
+    </Layout>
   )
 }
 
-export default SchoolsList
+export default Map

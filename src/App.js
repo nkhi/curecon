@@ -5,20 +5,19 @@ import {
 
 import Header from './components/homepage/header'
 import Landing from './components/homepage/landing'
-// import Map from './components/homepage/map'
+import Map from './components/homepage/map'
 // import Timeline from './components/homepage/timeine'
-// import SchoolsList from '../components/homepage/schoolsList'
-// import Footer from '../components/homepage/footer'
+import SchoolsList from './components/homepage/schoolsList'
+import Footer from './components/homepage/footer'
 
 function App() {
   return (
     <Layout>
       <Header/>
-      <Landing/>
-      {/*<Map id="map"/>
-      <Timeline id="timeline"/>
+      <Landing id="landing"/>
+      <Map id="map" />
       <SchoolsList id="list"/>
-      <Footer/> */}
+      <Footer/> 
     </Layout>
   )
 }
