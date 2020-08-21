@@ -19,14 +19,19 @@ const Landing = ({}) => {
 
     <Layout>
       <Left>
+      
         How well did your school respond to COVID-19?
+
         <Subtext>
           subtext blah blah blah blah blah blah
         </Subtext>
+        
         <ReadPaperButton>
           READ
         </ReadPaperButton>
-        <PaperPreview src='../../../../assets/examplePDF.png' alt='' class='image'/>
+        
+        <img src='../../../../public/examplePDF.png' alt='PDF'></img>
+      
       </Left>
 
       <Right>

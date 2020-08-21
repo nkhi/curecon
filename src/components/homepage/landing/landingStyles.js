@@ -3,7 +3,7 @@ import { pineGreen, mainYellow } from '../../../colorPalette'
 
 export const Layout = styled.div`
   background-color: ${pineGreen};
-  min-height: 40vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,8 +26,4 @@ export const Subtext = styled.div`
 
 export const ReadPaperButton = styled.button`
   background-color: ${mainYellow};
-`
-
-export const PaperPreview = styled.img`
-  width: 50%;
 `
