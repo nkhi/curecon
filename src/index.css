@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Helvetica-Bold';
-  src: local('Helvetica-Bold'), url(./fonts/Helvetica-Bold-Font.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Druk-Medium';
-  src: local('Druk-Medium'), url(./fonts/Druk-Medium-Web.ttf) format('truetype');
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,4 +10,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Druk-Medium-Web';
+  src: local('Druk-Medium-Web'), url(./fonts/Druk-Medium-Web.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: local('Helvetica-Bold'), url(./fonts/Helvetica-Bold-Font.ttf) format('truetype');
 }

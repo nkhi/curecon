@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import { pineGreen, mainYellow } from '../../../colorPalette'
+import { landingBlack, mainYellow } from '../../../colorPalette'
 
 export const Layout = styled.div`
-  background-color: ${pineGreen};
+  background-color: ${landingBlack};
   min-height: 45vh;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 `
 
 export const Left = styled.div`
@@ -30,6 +28,13 @@ export const ReadPaperButton = styled.button`
 
 export const TextSection = styled.div`
   display: flex;
+  font-family: 'Helvetica-Bold', 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 3rem;
+  padding: 3rem 2rem;
+  height: 4rem;
+  justify-content: center;
+  width: 100vw;
 `
 
 export const PaperPreview = styled.img`

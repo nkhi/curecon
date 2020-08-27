@@ -11,6 +11,7 @@ export const navyBlue = "#06065C"
 export const lightBlue = "#079DF5"
 export const lighterBlue = "#44D6EF"
 export const teal = "#13fbae"
+export const headerBlue = "#06345C"
 
 export const mainYellow = "#F6AF0E"
 export const dullYellow = "#E7B82B"
@@ -21,3 +22,6 @@ export const jadeGreen = "#55A57D"
 
 export const mainPurple = "#201826"
 export const lightPurple = "#542649"
+
+export const headerGray = "#202020"
+export const landingBlack = "0d0d0d"

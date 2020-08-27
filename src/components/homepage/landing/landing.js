@@ -19,11 +19,14 @@ const Landing = ({}) => {
   return(
 
     <Layout>
-      <Left>
+      <div>
         <TextSection>      
-          How well did your school respond to COVID-19?
-          <Subtext> subtext blah blah blah blah blah blah </Subtext>
+            How did your school respond to the COVID-19 pandemic?
         </TextSection>
+      </div>
+      <div>
+      <Left>
+        <Subtext> subtext blah blah blah blah blah blah </Subtext>
         
         <ReadPaperButton>
           READ
@@ -36,6 +39,7 @@ const Landing = ({}) => {
       <Right>
         <SubmissionForm/>
       </Right>
+    </div>
 
     </Layout>
   )
