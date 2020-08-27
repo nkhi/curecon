@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// top-level font declarations
+import './fonts/Helvetica-Bold-Font.tff'
+import './fonts/Druk-Medium-Web.tff'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
