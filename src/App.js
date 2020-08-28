@@ -3,12 +3,12 @@ import {
   Layout,
 } from './AppStyles.js';
 
-import Header from './components/homepage/header'
-import Landing from './components/homepage/landing'
-import Map from './components/homepage/map'
-import Timeline from './components/homepage/timeline'
-import SchoolsList from './components/homepage/schoolsList'
-import Footer from './components/homepage/footer'
+import Header from './pages/homepage/header'
+import Landing from './pages/homepage/landing'
+import Map from './pages/homepage/map'
+import Timeline from './pages/homepage/timeline'
+import SchoolsList from './pages/homepage/schoolsList'
+import Footer from './pages/homepage/footer'
 
 function App() {
   return (

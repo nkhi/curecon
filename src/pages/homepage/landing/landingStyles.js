@@ -41,3 +41,27 @@ export const PaperPreview = styled.img`
   width: 20%;
   height: 40%;
 `
+
+
+export const GridContainer = styled.div`
+  background-color: ${landingBlack};
+  min-height: 45vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "CallToAction CallToAction CallToAction CallToAction" "PaperDownload PaperDownload SubmissionSpace SubmissionSpace" "PaperDownload PaperDownload SubmissionSpace SubmissionSpace";
+`
+
+export const CallToAction = styled.div`
+  grid-area: CallToAction;
+`
+
+export const PaperDownload = styled.div`
+  grid-area: PaperDownload;
+`
+
+export const SubmissionSpace = styled.div`
+  grid-area: SubmissionSpace;
+  border-left: 1px solid white;
+`

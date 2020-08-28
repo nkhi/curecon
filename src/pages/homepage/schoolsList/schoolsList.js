@@ -8,7 +8,14 @@ import {
   Layout,
   Head,
   Body,
-  Region
+  Region,
+  GridContainer,
+  IndexSection,
+  Africa,
+  Asia,
+  Americas,
+  Europe,
+  Oceania
  } from './schoolsListStyles'
 
 const SchoolsList = ({}) => {
@@ -37,20 +44,31 @@ const SchoolsList = ({}) => {
   }]
 
   return(
-    <Layout>
-      <Head>
+    // <Layout>
+    //   <Head>
+    //     Institutions List
+    //     <SelectSearch options={optionsList} />
+    //   </Head>
+
+    //   <Body>
+    //     <Region>AFRICA</Region>
+    //     <Region>ASIA</Region>
+    //     <Region>THE AMERICAS</Region>
+    //     <Region>EUROPE</Region>
+    //     <Region>OCEANIA</Region>
+    //   </Body>
+    // </Layout>
+    <GridContainer>
+      <IndexSection>
         Institutions List
         <SelectSearch options={optionsList} />
-      </Head>
-
-      <Body>
-        <Region>AFRICA</Region>
-        <Region>ASIA</Region>
-        <Region>THE AMERICAS</Region>
-        <Region>EUROPE</Region>
-        <Region>OCEANIA</Region>
-      </Body>
-    </Layout>
+      </IndexSection>
+      <Africa></Africa>
+      <Asia></Asia>
+      <Americas></Americas>
+      <Europe></Europe>
+      <Oceania></Oceania>
+    </GridContainer>
   ) 
 }
 
