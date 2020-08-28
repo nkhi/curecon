@@ -47,7 +47,11 @@ const Landing = ({}) => (
     // </Layout>
 
     <GridContainer>
-      <CallToAction>CALLTOACTION</CallToAction>
+      <CallToAction>
+        <TextSection>      
+          How did your school respond to the COVID-19 pandemic?
+        </TextSection>
+      </CallToAction>
       <PaperDownload>PAPERDL</PaperDownload>
       <SubmissionSpace>SUBMISSION</SubmissionSpace>
     </GridContainer>
