@@ -30,7 +30,7 @@ export const GridContainer = styled.div`
   gap: 1px 1px;
   grid-template-areas: ". . . . ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Disclaimer Disclaimer Disclaimer .";
   background-color: ${headerGray};
-  min-height: 40vh;
+  min-height: 35vh;
 `
 export const CureconTextSection = styled.div`
   grid-area: CureconText;
@@ -40,10 +40,16 @@ export const CureconTextSection = styled.div`
 
 export const Links = styled.div`
   grid-area: Links;
+  display: flex;
+  place-items: center;
+  padding: 2rem;
 `
 
 export const Disclaimer = styled.div`
   grid-area: Disclaimer;
+  color: white;
+  font-family: 'Source Sans Pro';
+  text-align: left;
 `
 
 export const Emoji = styled.div`
@@ -56,21 +62,27 @@ export const EmojiImage = styled.img`
   max-width: 8rem;
   margin-right: 1rem;
 
-  /* Stolen from create-react-app rotate lol */
   &:hover{
-
     @keyframes App-logo-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     @media (prefers-reduced-motion: no-preference) {
       animation: App-logo-spin 2s linear;
+    }
   }
+`
 
+export const ListItem = styled.div`
+  list-style-type: none;
+  margin: 0 0.5rem;
+`
+
+export const Link = styled.a`
+  color: white;
+
+  &:hover{
+    color: #ffdd2c;
   }
 `
