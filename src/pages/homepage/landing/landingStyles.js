@@ -55,6 +55,8 @@ export const GridContainer = styled.div`
 
 export const CallToAction = styled.div`
   grid-area: CallToAction;
+  display: flex;
+  place-items: center;
 `
 
 export const PaperDownload = styled.div`

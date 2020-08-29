@@ -8,8 +8,8 @@ import {
    Disclaimer,
    Emoji,
    EmojiImage,
-   ListItem,
-   Link
+   Link,
+   NavLink,
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
 
@@ -26,16 +26,16 @@ const Footer = () => {
         </CureconText>
       </CureconTextSection>
       <Links>
-          <ListItem>MAP</ListItem>
-          <ListItem>TIMELINE</ListItem>
-          <ListItem>LIST</ListItem>
-          <ListItem>PAPER</ListItem>
-          <ListItem>SUBMIT</ListItem>
-          <ListItem>ABOUT</ListItem>
+          <NavLink href='/map'>Map</NavLink>
+          <NavLink href='/timeline'>Timeline</NavLink>
+          <NavLink href='/list'>List</NavLink>
+          <NavLink href='/paper'>Paper</NavLink>
+          <NavLink href='/submit'>Submit</NavLink>
+          <NavLink href='/about'>About Us</NavLink>
       </Links>
       <Disclaimer>
-        DISCLAIMER: This project was funded by <Link href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> a University of Toronto research grant</Link>.  
-        <Link href='https://github.com/nkhi/curecon'>   View the source code</Link>.
+        DISCLAIMER: This project was funded by 
+        <Link href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> a University of Toronto research grant</Link>.  
       </Disclaimer>
     </GridContainer>
   )

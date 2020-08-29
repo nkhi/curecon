@@ -7,4 +7,5 @@ export const Layout = styled.div`
   min-width: 25vw;
   background-color: ${mainRed};
   box-shadow:  5px 10px #888888;
+  margin: 3rem 8rem;
 `

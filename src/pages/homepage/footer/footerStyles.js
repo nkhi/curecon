@@ -29,7 +29,7 @@ export const GridContainer = styled.div`
   grid-template-rows: 0.25fr 1fr 1fr 1fr 0.5fr;
   gap: 1px 1px;
   grid-template-areas: ". . . . ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Disclaimer Disclaimer Disclaimer .";
-  background-color: ${headerGray};
+  background: rgb(32,32,32);
   min-height: 35vh;
 `
 export const CureconTextSection = styled.div`
@@ -43,6 +43,7 @@ export const Links = styled.div`
   display: flex;
   place-items: center;
   padding: 2rem;
+  justify-content: space-between;
 `
 
 export const Disclaimer = styled.div`
@@ -59,7 +60,7 @@ export const Emoji = styled.div`
 `
 
 export const EmojiImage = styled.img`
-  max-width: 8rem;
+  max-width: 6rem;
   margin-right: 1rem;
 
   &:hover{
@@ -74,15 +75,20 @@ export const EmojiImage = styled.img`
   }
 `
 
-export const ListItem = styled.div`
-  list-style-type: none;
-  margin: 0 0.5rem;
-`
-
 export const Link = styled.a`
   color: white;
 
   &:hover{
     color: #ffdd2c;
+  }
+`
+
+export const NavLink = styled(Link)`
+  font-weight: 700;
+  font-size: 1.25em;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
   }
 `
