@@ -30,12 +30,12 @@ const Header = ({ currentPage, setCurrentPage }) => {
 
       <ButtonsContainer>
         <ThemeProvider theme={theme}>
-          <NavButton href="#map">MAP</NavButton>
-          <NavButton color="#eae7da" href="#timeline">TIMELINE</NavButton>
-          <NavButton color="#eae7da" href="#list">LIST</NavButton>
-          <NavButton color="#eae7da" href="/paper">PAPER</NavButton>
-          <NavButton color="#eae7da" href="/submit">SUBMIT</NavButton>
-          <NavButton color="#eae7da" href="/about">ABOUT</NavButton>
+          <NavButton href="#map">Map</NavButton>
+          <NavButton href="#timeline">Timeline</NavButton>
+          <NavButton href="#list">List</NavButton>
+          <NavButton href="/paper">Paper</NavButton>
+          <NavButton href="/submit">Submit</NavButton>
+          <NavButton href="/about">About</NavButton>
         </ThemeProvider>
 
       </ButtonsContainer>
