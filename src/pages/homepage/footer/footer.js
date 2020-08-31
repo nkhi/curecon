@@ -26,11 +26,11 @@ const Footer = () => {
         </CureconText>
       </CureconTextSection>
       <Links>
-          <NavLink href='/map'>World Map</NavLink>
-          <NavLink href='/list'>Find your school</NavLink>
-          <NavLink href='/paper'>Research Paper</NavLink>
-          <NavLink href='/submit'>Submit</NavLink>
-          <NavLink href='/about'>About</NavLink>
+          <NavLink href='/map'>📍 World Map</NavLink>
+          <NavLink href='/schools'>🏫 Find your school</NavLink>
+          <NavLink href='/paper'>📑 Research Paper</NavLink>
+          <NavLink href='/submit'>🎙 Submit</NavLink>
+          <NavLink href='/about'>🤓 About</NavLink>
       </Links>
       <Disclaimer>
         DISCLAIMER: This project was funded by 

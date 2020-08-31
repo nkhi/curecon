@@ -21,11 +21,11 @@ const Header = ({ currentPage, setCurrentPage }) => (
     </TitleSection>
 
     <ButtonsContainer>
-        <NavButton href="#map">World Map</NavButton>
-        <NavButton href="#list">Find your school</NavButton>
-        <NavButton href="/paper">Research Paper</NavButton>
-        <NavButton href="/submit">Submit</NavButton>
-        <NavButton href="/about">About</NavButton>
+      <NavButton href="/map">📍 World Map</NavButton>
+      <NavButton href="/schools">🏫 Find your school</NavButton>
+      <NavButton href="/paper">📑 Research Paper</NavButton>
+      <NavButton href="/submit">🎙 Submit</NavButton>
+      <NavButton href="/about">🤓 About</NavButton>
     </ButtonsContainer>
 
   </NavigationContainer>

@@ -45,20 +45,6 @@ const SchoolsList = ({}) => {
   }]
 
   return(
-    // <Layout>
-    //   <Head>
-    //     Institutions List
-    //     <SelectSearch options={optionsList} />
-    //   </Head>
-
-    //   <Body>
-    //     <Region>AFRICA</Region>
-    //     <Region>ASIA</Region>
-    //     <Region>THE AMERICAS</Region>
-    //     <Region>EUROPE</Region>
-    //     <Region>OCEANIA</Region>
-    //   </Body>
-    // </Layout>
     <GridContainer>
       <IndexSection>
         Institutions List

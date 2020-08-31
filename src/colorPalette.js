@@ -14,7 +14,7 @@ export const teal = "#13fbae"
 export const headerBlue = "#06345C"
 
 export const mainYellow = "#F6AF0E"
-export const dullYellow = "#E7B82B"
+export const dullYellow = "#CE9004"
 
 export const mainGreen = "#11bf56"
 export const pineGreen = "#177D52"

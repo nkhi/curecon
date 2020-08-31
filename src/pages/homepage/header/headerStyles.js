@@ -41,15 +41,14 @@ export const NavButton = styled.a`
   margin: 0.75rem;
   color: ${mainWhite};
   text-decoration: none;
-  /* font-family: 'Helvetica-Bold'; */
-  font-size: 0.85em;
+  font-family: 'Helvetica-Bold';
+  font-size: 0.9em;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
   word-spacing: 2px;
 
   &:hover{
-    /* text-decoration: underline; */
     color: #ffdd2c;
   }
 `
