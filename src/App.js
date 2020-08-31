@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Top-Level Pages
 import Homepage from './pages/homepage'
-import InstitutionInformation from './pages/institutionInfo'
-import Submission from './pages/submission'
-import About from './pages/about'
+// import InstitutionInformation from './pages/institutionInfo'
+// import Submission from './pages/submission'
+// import About from './pages/about'
 
 const App = () => (
   <Router>
-    <Switch>
+    {/* <Switch>
       <Route path='/school/:schoolCode?'>
         <InstitutionInformation />
       </Route>
@@ -23,7 +23,7 @@ const App = () => (
       <Route path='/about'>
         <About />
       </Route>
-    </Switch>
+    </Switch> */}
     <Switch>
       <Route>
         <Homepage />

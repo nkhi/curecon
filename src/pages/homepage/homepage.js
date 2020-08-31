@@ -8,15 +8,17 @@ import Timeline from './timeline'
 import SchoolsList from './schoolsList'
 import Footer from './footer'
 
+import { Layout } from './homepageStyles'
+
 const Homepage = () => (
-<Layout>
-    <Header/>
-    <Landing/>
-    <Map id="map" />
-    <Timeline id="timeline"/>
-    <SchoolsList id="list"/>
-    <Footer/> 
-</Layout>
+    <Layout>
+        <Header/>
+        <Landing/>
+        <Map id="map" />
+        <Timeline id="timeline"/>
+        <SchoolsList id="list"/>
+        <Footer/> 
+    </Layout>
 )
 
 export default Homepage

@@ -17,6 +17,7 @@ import {
   Europe,
   Oceania
  } from './schoolsListStyles'
+ import './searchStyles.css';
 
 const SchoolsList = ({}) => {
   const optionsList = [

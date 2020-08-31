@@ -85,10 +85,13 @@ export const Link = styled.a`
 
 export const NavLink = styled(Link)`
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-spacing: 2px;
   text-decoration: none;
 
   &:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 `

@@ -5,38 +5,45 @@ import SubmissionForm from '../../../components/submissionForm'
 
 //styles
 import {
-    Layout,
-    Left,
-    Right,
-    Subtext,
     ReadPaperButton,
     TextSection,
     PaperPreview,
     GridContainer,
     CallToAction,
     PaperDownload,
+      Blurb,
+      PDFDownload,
+      ButtonsContainer,
     SubmissionSpace
 } from './landingStyles'
-import './searchStyles.css';
 
 const Landing = ({}) => (
   <GridContainer>
+
     <CallToAction>
       <TextSection>      
         How did your school respond to the COVID-19 pandemic?
       </TextSection>
     </CallToAction>
+
     <PaperDownload>
-      <ReadPaperButton>
-        READ
-      </ReadPaperButton>
-      
+      <PDFDownload>
         <PaperPreview src={require('./assets/examplePDF.png')} alt='PDF' />
-    
+      </PDFDownload>
+      <Blurb>
+        BLUEBouwbwubgiau ebgliug
+      </Blurb>
+      <ButtonsContainer>
+        <ReadPaperButton>
+          READ
+        </ReadPaperButton>
+      </ButtonsContainer>
     </PaperDownload>
+
     <SubmissionSpace>
       <SubmissionForm/>
     </SubmissionSpace>
+
   </GridContainer>
 )
 

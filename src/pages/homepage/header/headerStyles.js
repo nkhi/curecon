@@ -7,19 +7,19 @@ export const NavigationContainer = styled.div`
   position: sticky;
   flex-flow: row;
   justify-content: space-between;
-  min-height: 12vh;
+  min-height: 15vh;
   background-color: ${headerGray};
 `
-export const Chunk = styled.div`
+export const TitleSection = styled.div`
   display: flex;
   place-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 `
 
 export const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 4rem;
 `
 
 export const CureconText = styled.a`
@@ -31,15 +31,41 @@ export const CureconText = styled.a`
   line-height: 2rem;
   text-decoration: none;
   color: ${mainWhite};
+
+  &:hover {
+    color: #ffdd2c;
+  }
 `
 
 export const NavButton = styled.a`
   margin: 0.75rem;
   color: ${mainWhite};
   text-decoration: none;
-  font-family: 'Helvetica-Bold';
+  /* font-family: 'Helvetica-Bold'; */
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 2px;
 
   &:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #ffdd2c;
+  }
+`
+
+export const EmojiImage = styled.img`
+  max-width: 5rem;
+  margin-right: 1rem;
+
+  &:hover{
+    @keyframes App-logo-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: App-logo-spin 2s linear;
+    }
   }
 `

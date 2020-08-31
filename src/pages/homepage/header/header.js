@@ -3,26 +3,27 @@ import React from 'react'
 //styles
 import {
   NavigationContainer,
-  Chunk,
+  TitleSection,
   CureconText,
   NavButton,
-  ButtonsContainer
+  ButtonsContainer,
+  EmojiImage
 } from './headerStyles'
 
 const Header = ({ currentPage, setCurrentPage }) => (
   <NavigationContainer>
 
-    <Chunk>
+    <TitleSection>
+      <EmojiImage src={require('../footer/assets/mask.png')}/>
       <CureconText href="/">
         COVID-19 University <br/> Response Consolidation
       </CureconText>
-    </Chunk>
+    </TitleSection>
 
     <ButtonsContainer>
-        <NavButton href="#map">Map</NavButton>
-        <NavButton href="#timeline">Timeline</NavButton>
-        <NavButton href="#list">List</NavButton>
-        <NavButton href="/paper">Paper</NavButton>
+        <NavButton href="#map">World Map</NavButton>
+        <NavButton href="#list">Find your school</NavButton>
+        <NavButton href="/paper">Research Paper</NavButton>
         <NavButton href="/submit">Submit</NavButton>
         <NavButton href="/about">About</NavButton>
     </ButtonsContainer>
