@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Homepage from './pages/homepage'
 // import InstitutionInformation from './pages/institutionInfo'
 // import Submission from './pages/submission'
-// import About from './pages/about'
+import About from './pages/about'
 
 const App = () => (
   <Router>
@@ -18,12 +18,12 @@ const App = () => (
       <Route path='/submit'>
         <Submission />
       </Route>
-    </Switch>
+    </Switch> */}
     <Switch>
       <Route path='/about'>
         <About />
       </Route>
-    </Switch> */}
+    </Switch>
     <Switch>
       <Route>
         <Homepage />

@@ -9,7 +9,7 @@ export const Layout = styled.div`
 export const Head = styled.div`
   display: flex; 
   justify-content: space-between;
-  min-height: 6vh;
+  min-height: 8vh;
   font-size: 2rem;
   font-weight: 600;
   color: ${mainWhite};
@@ -33,8 +33,8 @@ export const GridContainer = styled.div`
   min-height: 50vh;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
-  grid-template-rows: 0.25fr 1fr;
-  gap: 1px 1px;
+  grid-template-rows: 0.3fr 1fr;
+  gap: 1px 12px;
   grid-template-areas: ". IndexSection IndexSection IndexSection IndexSection IndexSection ." ". Africa Americas Asia Europe Oceania .";
 `
 
@@ -42,7 +42,7 @@ export const IndexSection = styled.div`
   grid-area: IndexSection;
   justify-content: space-between;
   align-items: center;
-  min-height: 6vh;
+  min-height: 8vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;

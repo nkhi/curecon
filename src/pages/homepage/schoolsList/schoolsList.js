@@ -1,8 +1,9 @@
 import React from 'react'
 
 // dependancies
-import Select from 'react-dropdown-select';
+import Select from 'react-dropdown-select'; // search bar component
 import Collapsible from 'react-collapsible';
+import ControlledAccordion from './controlledAccordion'
 
 //styles
 import { 
@@ -30,16 +31,104 @@ const SchoolsList = ({}) => {
     { label: "Snakes", value: 6 },
   ]
 
-  const collabibleTriggerStyle = {
-    textAlign: 'left',
-  }
+  const AfricanSubregions = [
+      { 
+        name: "North Africa & the Middle East", 
+        schools: [""]
+      },
+      { 
+        name: "East Africa", 
+        schools: [""]
+      },
+      { 
+        name: "West Africa", 
+        schools: [""]
+      },
+      { 
+        name: "Central Sub-Saharan Africa", 
+        schools: [""]
+      },
+      { 
+        name: "South Africa", 
+        schools: [""]
+      }, 
+  ]
+
+  const AmericanSubregions = [
+      { 
+        name: "North America", 
+        schools: [""]
+      },
+      { 
+        name: "Southern Latin America", 
+        schools: [""]
+      },
+      { 
+        name: "Central Latin America", 
+        schools: [""]
+      },
+      { 
+        name: "South America", 
+        schools: [""]
+      },
+  ]
+
+  const AsianSubregions = [
+      { 
+        name: "Central Asia", 
+        schools: [""]
+      },
+      { 
+        name: "East Asia", 
+        schools: [""]
+      },
+      { 
+        name: "Southeast Asia", 
+        schools: [""]
+      },
+      { 
+        name: "South Asia", 
+        schools: [""]
+      },
+      { 
+        name: "Asia Pacific", 
+        schools: [""]
+      },
+  ]
+
+  const EuropeanSubregions = [
+      { 
+        name: "Western Europe", 
+        schools: [""]
+      },
+      { 
+        name: "Central Europe", 
+        schools: [""]
+      },
+      { 
+        name: "Eastern Europe", 
+        schools: [""]
+      },
+  ]
+
+  const OceanicSubregions = [
+      { 
+        name: "Australasia", 
+        schools: [""]
+      },
+      { 
+        name: "Oceania", 
+        schools: [""]
+      },
+  ]
+
 
   return(
     <GridContainer>
       
       <IndexSection>
         <TitlePart> 
-          Universities by Region
+          Find your School
         </TitlePart>
 
         <SearchPart>
@@ -51,45 +140,27 @@ const SchoolsList = ({}) => {
       
       <Africa>
         <Title>🌍 Africa</Title>
-        <Collapsible className='text-align: left' trigger="&#10148; North Africa & Middle East"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; East Africa"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; West Africa"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Central Sub‐Saharan Africa"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; South Africa"> Some Countries eventually </Collapsible>
+        <ControlledAccordion subregions={AfricanSubregions}/>
       </Africa>
 
       <Americas>
         <Title>🌎 Americas</Title>
-        <Collapsible trigger="&#10148; North America"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Southern Latin America"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Central Latin America"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; South America"> 
-          <Collapsible trigger="&#10148; Tropical"> Some Countries eventually </Collapsible>
-          <Collapsible trigger="&#10148; Andean"> Some Countries eventually </Collapsible>
-          <Collapsible trigger="&#10148; Carribean"> Some Countries eventually </Collapsible>
-        </Collapsible>
+        <ControlledAccordion subregions={AmericanSubregions}/>
       </Americas>
 
       <Asia>
         <Title>🌏 Asia</Title>
-        <Collapsible trigger="&#10148; Central Asia"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; East Asia"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Southeast Asia"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; South Asia"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Asia Pacisic"> Some Countries eventually </Collapsible>
+        <ControlledAccordion subregions={AsianSubregions}/>
       </Asia>
 
       <Europe>
         <Title>🌍 Europe</Title>
-        <Collapsible trigger="&#10148; Western Europe"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Central Europe"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Eastern Europe"> Some Countries eventually </Collapsible>
+        <ControlledAccordion subregions={EuropeanSubregions}/>
       </Europe>
 
       <Oceania>
         <Title>🌏 Oceania</Title>
-        <Collapsible trigger="&#10148; Australasia"> Some Countries eventually </Collapsible>
-        <Collapsible trigger="&#10148; Oceania"> Some Countries eventually </Collapsible>
+        <ControlledAccordion subregions={OceanicSubregions}/>
       </Oceania>
 
     </GridContainer>
