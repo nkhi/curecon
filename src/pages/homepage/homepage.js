@@ -15,7 +15,7 @@ const Homepage = () => (
         <Header/>
         <Landing/>
         <Map id="map" />
-        <Timeline id="timeline"/>
+        {/* <Timeline id="timeline"/> */}
         <SchoolsList id="list"/>
         <Footer/> 
     </Layout>

@@ -5,6 +5,10 @@ import {
    GridContainer,
    CureconTextSection,
    Links,
+    WorldMapLinkArea,
+    SchoolLinkArea,
+    AboutLinkArea,
+    SubmitLinkArea,
    Disclaimer,
    Emoji,
    EmojiImage,
@@ -12,6 +16,7 @@ import {
    NavLink,
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
+// import { RadialBg } from './landingBG'
 
 const Footer = () => {
 
@@ -26,11 +31,18 @@ const Footer = () => {
         </CureconText>
       </CureconTextSection>
       <Links>
+        <WorldMapLinkArea>
           <NavLink href='/map'>📍 World Map</NavLink>
+        </WorldMapLinkArea>
+        <SchoolLinkArea>
           <NavLink href='/schools'>🏫 Find your school</NavLink>
-          <NavLink href='/paper'>📑 Research Paper</NavLink>
+        </SchoolLinkArea>
+        <SubmitLinkArea>
           <NavLink href='/submit'>🎙 Submit</NavLink>
+        </SubmitLinkArea>
+        <AboutLinkArea>
           <NavLink href='/about'>🤓 About</NavLink>
+        </AboutLinkArea>
       </Links>
       <Disclaimer>
         DISCLAIMER: This project was funded by 

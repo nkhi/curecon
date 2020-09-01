@@ -112,6 +112,7 @@ export const ContinueButton = styled.button`
   display: flex;
   align-items: center;
   height: 1rem;
+  width: 9rem;
 
   &:hover{
     background-color: #2EE59D;

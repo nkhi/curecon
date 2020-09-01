@@ -25,7 +25,7 @@ export const LinksSection = styled.div`
 `
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.25fr 0.15fr 1fr 1fr 0.25fr;
+  grid-template-columns: 0.15fr 0.15fr 1fr 1.15fr 0.15fr;
   grid-template-rows: 0.25fr 1fr 1fr 1fr 0.5fr;
   gap: 1px 1px;
   grid-template-areas: ". . . . ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Disclaimer Disclaimer Disclaimer .";
@@ -40,10 +40,46 @@ export const CureconTextSection = styled.div`
 
 export const Links = styled.div`
   grid-area: Links;
-  display: flex;
-  place-items: center;
-  padding: 2rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". ." ". WorldMap" ". School" ". Submit" " . About" ". ." ;
+  /* place-items: center; */
+  padding: 4rem 0;
+  /* justify-content: space-between; */
+`
+
+export const WorldMapLinkArea = styled.div`
+  grid-area: WorldMap;
+  text-align: left;
+  /* place-items: center;
+  justify-content: center;
+  display: flex; */
+`
+
+export const SchoolLinkArea = styled.div`
+  grid-area: School;
+  text-align: left;
+  /* place-items: center;
+  justify-content: center;
+  display: flex; */
+`
+
+export const AboutLinkArea = styled.div`
+  grid-area: About;
+  text-align: left;
+  /* place-items: center;
+  justify-content: center;
+  display: flex; */
+`
+
+export const SubmitLinkArea = styled.div`
+  grid-area: Submit;
+  text-align: left;
+  /* place-items: center;
+  justify-content: center;
+  display: flex; */
 `
 
 export const Disclaimer = styled.div`
