@@ -45,41 +45,27 @@ export const Links = styled.div`
   grid-template-rows: 1fr 0.75fr 0.75fr 0.75fr 0.75fr 1fr;
   gap: 1px 1px;
   grid-template-areas: ". ." ". WorldMap" ". School" ". Submit" " . About" ". ." ;
-  /* place-items: center; */
   padding: 4rem 0;
-  /* justify-content: space-between; */
 `
 
 export const WorldMapLinkArea = styled.div`
   grid-area: WorldMap;
   text-align: left;
-  /* place-items: center;
-  justify-content: center;
-  display: flex; */
 `
 
 export const SchoolLinkArea = styled.div`
   grid-area: School;
   text-align: left;
-  /* place-items: center;
-  justify-content: center;
-  display: flex; */
 `
 
 export const AboutLinkArea = styled.div`
   grid-area: About;
   text-align: left;
-  /* place-items: center;
-  justify-content: center;
-  display: flex; */
 `
 
 export const SubmitLinkArea = styled.div`
   grid-area: Submit;
   text-align: left;
-  /* place-items: center;
-  justify-content: center;
-  display: flex; */
 `
 
 export const Disclaimer = styled.div`
@@ -126,8 +112,4 @@ export const NavLink = styled(Link)`
   text-transform: uppercase;
   word-spacing: 2px;
   text-decoration: none;
-
-  &:hover{
-    /* text-decoration: underline; */
-  }
 `
