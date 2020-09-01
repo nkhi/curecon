@@ -1,4 +1,9 @@
 import React from 'react';
+
+// styles
+import { ListItem, UnorderedList, Link } from './controlledAccordionStyles'
+
+//
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
@@ -13,11 +18,8 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     flexShrink: 0,
+    fontWeight: 500,
   },
-  // secondaryHeading: {
-  //   fontSize: theme.typography.pxToRem(15),
-  //   color: theme.palette.text.secondary,
-  // },
 }));
 
 const ControlledAccordion = ({subregions}) => {
@@ -40,11 +42,16 @@ const ControlledAccordion = ({subregions}) => {
             <Typography className={classes.heading}>{subregion.name}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
-              {subregion.schools.join('OOA')}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-              sit amet blandit leo lobortis eget.
-            </Typography>
+            <UnorderedList>
+            {subregion.schools.sort().map((schoolName) => {
+              const urlPart = schoolName.split(' ').slice(1, 9).join('')
+              return(
+                <ListItem>
+                  <Link href={`/school/${urlPart}`}> {schoolName}</Link>
+                </ListItem> 
+              )})
+            }
+            </UnorderedList>
           </AccordionDetails>
         </Accordion>
       ))}

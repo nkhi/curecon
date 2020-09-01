@@ -34,30 +34,30 @@ const SchoolsList = ({}) => {
   const AfricanSubregions = [
       { 
         name: "North Africa & the Middle East", 
-        schools: [""]
+        schools: ["American University of Beirut", "Hebrew University of Jerusalem", "American University of Cairo", "Mohammed V University Rabat", "Boğaziçi University"]
       },
       { 
         name: "East Africa", 
-        schools: [""]
+        schools: ["University of Nairobi", "Addis Ababa University", "University of Dar es Salaam", "Makerere University", "Moi University"]
       },
       { 
         name: "West Africa", 
-        schools: [""]
+        schools: ["Covenant University", "UNILAG", "University of Ghana", "University of Namibia", "Sudan University of Science and Technology"]
       },
       { 
         name: "Central Sub-Saharan Africa", 
-        schools: [""]
+        schools: ["Marien Ngouabi University", "Université de Bangui", "Universidade Católica de Angola", "University of Kinshasa", "National University of Equatorial Guinea"]
       },
       { 
         name: "South Africa", 
-        schools: [""]
+        schools: ["University of Cape Town", "University of the Witwatersrand", "Stellenbosch University"]
       }, 
   ]
 
   const AmericanSubregions = [
       { 
         name: "North America", 
-        schools: [""]
+        schools: ["🇨🇦 University of Toronto", "🇨🇦 University of British Columbia", "🇨🇦 McGill University", "🇨🇦 Dalhousie University", "🇨🇦 University of Alberta", "🇨🇦 McMaster University", "🇨🇦 University of Guelph", "🇨🇦 Simon Fraser University", "🇨🇦 University of Victoria", "🇨🇦 University of Calgary", "🇺🇸 Harvard University", "🇺🇸 University of California, Berkeley", "🇺🇸 New York University", "🇺🇸 Arizona State University", "🇺🇸 Liberty University", "🇺🇸 UCLA", "🇺🇸 Stanford University", "🇺🇸 Case Western Reserve", "🇺🇸 University of Minnesota, Twin Cities", "🇺🇸 Colorado State University", "🇺🇸 Johns Hopkins University", "🇺🇸 Georgia Institute of Technology", "🇺🇸 Emory University", "🇺🇸 Northwestern University", "🇺🇸 Tufts University"]
       },
       { 
         name: "Southern Latin America", 
@@ -80,11 +80,11 @@ const SchoolsList = ({}) => {
       },
       { 
         name: "East Asia", 
-        schools: [""]
+        schools: ["National Taiwan University", "Taipei Medical University", "Tsinghua University", "University of Science and Technology of China", "Peking University"]
       },
       { 
         name: "Southeast Asia", 
-        schools: [""]
+        schools: ["University of Peradeniya", "University of Malaya", "Hanoi University of Science and Technology", "University of the Philipines" ,"Mae Fah Luang University"]
       },
       { 
         name: "South Asia", 
@@ -99,7 +99,7 @@ const SchoolsList = ({}) => {
   const EuropeanSubregions = [
       { 
         name: "Western Europe", 
-        schools: [""]
+        schools: ["Sorbonne Université", "Université de Bordeaux", "LMU Munich", "Katholieke Universiteit Leuven", "University of Amsterdam"]
       },
       { 
         name: "Central Europe", 

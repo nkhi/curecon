@@ -33,8 +33,9 @@ export const GridContainer = styled.div`
   min-height: 50vh;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
   gap: 1px 12px;
+  padding-bottom: 3rem;
   grid-template-areas: ". IndexSection IndexSection IndexSection IndexSection IndexSection ." ". Africa Americas Asia Europe Oceania .";
 `
 
@@ -87,7 +88,7 @@ export const SearchPart = styled.div`
 export const Title = styled.div`
   font-size: 2rem;
   text-transform: uppercase;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 `
