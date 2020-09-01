@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 
 // Module for Star Rating
 import Rating from '@material-ui/lab/Rating';
-import Box from '@material-ui/core/Box';
 
 //styles
 import { 
-Layout,
 GridContainer,
 University,
 DegreeInfo,
@@ -16,10 +14,14 @@ RatingSection,
 Continue,
 Input,
 ContinueButton,
-Label
+DisclaimerText,
+Link,
+Disclaimer,
+Face,
+IconSpace,
+TextDisclaimer
 } from './submissionFormStyles'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import DataUsageIcon from '@material-ui/icons/DataUsage';
 
 const SubmissionForm = ({}) => {
   const [ userData, setUserData ] = useState({}) 
@@ -53,14 +55,23 @@ const SubmissionForm = ({}) => {
             max={10} 
           />  
         </RatingSection>
+        <Disclaimer>
+          <IconSpace><Face /></IconSpace>
+          <TextDisclaimer>
+          <DisclaimerText>
+            <Link href='/data'>Read our Data Privacy Statement</Link> <br/> TL;DR: it's completely anonymous. 
+          </DisclaimerText>
+          </TextDisclaimer>
+        </Disclaimer>
 
         <Continue>
-          <ContinueButton>
-            Continue
-            <NavigateNextIcon />
-          </ContinueButton>
+          <a href='/submit' style={{textDecoration: 'none'}}>
+            <ContinueButton>
+              Continue
+              <NavigateNextIcon />
+            </ContinueButton>
+          </a>
         </Continue>
-
       </GridContainer>
   )
 }

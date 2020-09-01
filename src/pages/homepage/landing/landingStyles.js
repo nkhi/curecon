@@ -1,26 +1,5 @@
 import styled from 'styled-components';
-import { landingBlack, mainYellow, dullYellow, shade} from '../../../colorPalette'
-
-export const Layout = styled.div`
-  background-color: ${landingBlack};
-  min-height: 45vh;
-  display: flex;
-`
-
-export const Left = styled.div`
-  display: flex;
-  margin-left: 1rem;
-`
-
-export const Right = styled.div`
-  display: flex;
-  margin-right: 1rem;
-`
-
-export const Subtext = styled.div`
-  font-weight: 300;
-  font-size: 0.75rem;
-`
+import { mainYellow, shade} from '../../../colorPalette'
 
 export const ReadPaperButton = styled.button`
   background-color: ${mainYellow};
@@ -65,8 +44,8 @@ export const PaperPreview = styled.img`
 `
 
 export const GridContainer = styled.div`
-  background: rgb(234,231,218);
-  background: linear-gradient(180deg, rgba(234,231,218,1) 0%, rgba(193,188,170,1) 100%);
+  background: rgb(228,230,235);
+  background: linear-gradient(180deg, rgba(228,230,235,1) 0%, rgba(192,193,198,1) 100%);
   min-height: 60vh;
   display: grid;
   grid-template-columns: 0.5fr 0.75fr 1fr 0.5fr;
