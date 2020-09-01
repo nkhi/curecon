@@ -42,7 +42,7 @@ export const Links = styled.div`
   grid-area: Links;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 0.75fr 0.75fr 0.75fr 0.75fr 1fr;
   gap: 1px 1px;
   grid-template-areas: ". ." ". WorldMap" ". School" ". Submit" " . About" ". ." ;
   /* place-items: center; */
@@ -121,7 +121,7 @@ export const Link = styled.a`
 
 export const NavLink = styled(Link)`
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.95em;
   letter-spacing: 1px;
   text-transform: uppercase;
   word-spacing: 2px;
