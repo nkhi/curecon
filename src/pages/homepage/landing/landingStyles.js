@@ -45,7 +45,7 @@ export const PaperPreview = styled.img`
 
 export const GridContainer = styled.div`
   background: rgb(228,230,235);
-  background: linear-gradient(180deg, rgba(228,230,235,1) 0%, rgba(192,193,198,1) 100%);
+  background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%);
   min-height: 60vh;
   display: grid;
   grid-template-columns: 0.5fr 0.75fr 1fr 0.5fr;

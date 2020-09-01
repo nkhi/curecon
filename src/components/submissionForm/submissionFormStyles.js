@@ -61,7 +61,7 @@ export const RatingSection = styled.div`
 export const Continue = styled.div`
   grid-area: Continue;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `
 
