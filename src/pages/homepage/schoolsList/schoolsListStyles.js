@@ -28,15 +28,15 @@ export const Region = styled.div`
 `
 
 export const GridContainer = styled.div`
-  background: rgb(228,230,235);
-  background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%);
-  min-height: 50vh;
+  /* background: rgb(228,230,235);
+  background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%); */
+  min-height: 30vh;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-rows: 1fr;
   gap: 1px 12px;
-  padding-bottom: 3rem;
-  grid-template-areas: ". IndexSection IndexSection IndexSection IndexSection IndexSection ." ". Africa Americas Asia Europe Oceania .";
+  padding: 3rem 0;
+  grid-template-areas: ". Africa Americas Asia Europe Oceania .";
 `
 
 export const IndexSection = styled.div`
@@ -73,7 +73,7 @@ export const Oceania = styled.div`
 
 export const TitlePart = styled.div`
   grid-area: TitlePart;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: ${shade};
   text-align: left;
@@ -86,8 +86,7 @@ export const SearchPart = styled.div`
 `
 
 export const Title = styled.div`
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 1.5em;
   margin-bottom: 2rem;
   font-weight: 700;
   text-align: center;
