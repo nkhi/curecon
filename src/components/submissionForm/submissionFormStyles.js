@@ -53,6 +53,9 @@ export const RatingSection = styled.div`
   padding: 1.25rem 0;
   /* background-color: #990b20; */
   background-color: #e82744;
+  display: flex;
+  place-items: center;
+  justify-content: center;
 `
 
 export const Continue = styled.div`
@@ -114,7 +117,7 @@ export const ContinueButton = styled.button`
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
-    transform: translateY(-5px);
+    transform: translateX(5px);
   }
 `
 

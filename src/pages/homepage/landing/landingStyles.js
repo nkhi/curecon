@@ -67,7 +67,6 @@ export const PaperDownload = styled.div`
 `
 
 export const Blurb = styled.div`
-  grid-area: Blurb;
   color: ${shade};
   text-align: right;
   font-size: 20px;
