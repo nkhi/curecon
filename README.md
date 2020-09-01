@@ -19,3 +19,4 @@ Visit it here: http://uofcov.id
 - Footer looks a bit funny, can definitely improve link cluster layout / background color
 - About page, School Data Page, Submission Page need to be made, routes needs to be set-up
 - Submission of form data to DB needs to be configured
+- Mobile CSS is not setup for any of the components, need to add page container to handle media querying
