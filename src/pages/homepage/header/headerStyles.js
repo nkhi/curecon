@@ -9,10 +9,6 @@ export const NavigationContainer = styled.div`
   justify-content: space-between;
   min-height: 15vh;
   background-color: ${headerGray};
-
-  @media (max-width: 1400px) {
-    background-color: ${mainWhite};
-  }
 `
 export const TitleSection = styled.div`
   display: flex;
@@ -25,9 +21,10 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   padding: 0 4rem;
 
-  @media screen (min-width > 1400px) {
+  /* this totally works figure these out asap 
+  @media screen and (min-width: 1400px) {
     display: none;
-  }
+  } */
 `
 
 export const CureconText = styled.a`
@@ -78,11 +75,11 @@ export const EmojiImage = styled.img`
 `
 
 export const MobileMenu = styled.div`
-  @media screen  and (min-width > 0px) and (max-width < 1400px){
+  @media screen  and (min-width: 0px) and (max-width: 1400px){
     display: block;
   }
 
-  @media screen and (min-width > 1401px) {
+  @media screen and (min-width: 1401px) {
     display: none;
   }
 `

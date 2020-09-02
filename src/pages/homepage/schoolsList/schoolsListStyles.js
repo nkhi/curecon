@@ -61,40 +61,20 @@ export const Africa = styled.div`
   grid-template-areas: "TitlePart" "DropdownPart";
 `
 
-export const Asia = styled.div`
+export const Asia = styled(Africa)`
   grid-area: Asia;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2.5rem 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "TitlePart" "DropdownPart";
 `
 
-export const Americas = styled.div`
+export const Americas = styled(Africa)`
   grid-area: Americas;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2.5rem 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "TitlePart" "DropdownPart";
 `
 
-export const Europe = styled.div`
+export const Europe = styled(Africa)`
   grid-area: Europe;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2.5rem 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "TitlePart" "DropdownPart";
 `
 
-export const Oceania = styled.div`
+export const Oceania = styled(Africa)`
   grid-area: Oceania;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2.5rem 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "TitlePart" "DropdownPart";
 `
 
 export const TitlePart = styled.div`
@@ -116,14 +96,15 @@ export const Title = styled.div`
   font-size: 1.15em;
   font-weight: 700;
   text-align: center;
-  color: ${shade};
+  color: rgba(0, 0, 0, 0.87);
 `
 
 export const TitlePill = styled.div`
-  background-color: #f2efe9;
+  background-color: #ffffff;
   width: 9rem;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   place-items: center;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 `

@@ -239,23 +239,47 @@ const SchoolsList = ({}) => {
       </Africa>
 
       <Americas>
-        <Title>🌎 Americas</Title>
-        <ControlledAccordion subregions={AmericanSubregions}/>
+        <TitlePart>
+          <TitlePill>
+            <Title>🌎 Americas</Title>
+          </TitlePill>
+        </TitlePart>
+        <DropdownPart>
+          <ControlledAccordion subregions={AmericanSubregions}/>
+        </DropdownPart>
       </Americas>
 
       <Asia>
-        <Title>🌏 Asia</Title>
-        <ControlledAccordion subregions={AsianSubregions}/>
+        <TitlePart>
+          <TitlePill>
+            <Title>🌏 Asia</Title>
+          </TitlePill>
+        </TitlePart>
+        <DropdownPart>
+          <ControlledAccordion subregions={AsianSubregions}/>
+        </DropdownPart>
       </Asia>
 
       <Europe>
-        <Title>🌍 Europe</Title>
-        <ControlledAccordion subregions={EuropeanSubregions}/>
+        <TitlePart>
+          <TitlePill>
+            <Title>🌍 Europe</Title>
+          </TitlePill>
+        </TitlePart>
+        <DropdownPart>
+          <ControlledAccordion subregions={EuropeanSubregions}/>
+        </DropdownPart>
       </Europe>
 
       <Oceania>
-        <Title>🌏 Oceania</Title>
-        <ControlledAccordion subregions={OceanicSubregions}/>
+        <TitlePart>
+          <TitlePill>
+            <Title>🌏 Oceania</Title>
+          </TitlePill>
+        </TitlePart>
+        <DropdownPart>
+          <ControlledAccordion subregions={OceanicSubregions}/>
+        </DropdownPart>
       </Oceania>
 
     </GridContainer>
