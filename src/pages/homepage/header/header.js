@@ -7,7 +7,8 @@ import {
   CureconText,
   NavButton,
   ButtonsContainer,
-  EmojiImage
+  EmojiImage,
+  MobileMenu
 } from './headerStyles'
 
 const Header = ({ currentPage, setCurrentPage }) => (
@@ -19,6 +20,14 @@ const Header = ({ currentPage, setCurrentPage }) => (
         COVID-19 University <br/> Response Consolidation
       </CureconText>
     </TitleSection>
+
+    <MobileMenu>
+      dwef
+      {/* <HamburgerMenu
+          isOpen={this.state.open} menuClicked={this.handleClick.bind(this)}
+          width={18} height={15} strokeWidth={1} color='black'
+          rotate={0} borderRadius={0} animationDuration={0.5} /> */}
+    </MobileMenu>
 
     <ButtonsContainer>
       <NavButton href="/map">📍 World Map</NavButton>

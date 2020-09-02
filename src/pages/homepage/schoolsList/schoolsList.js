@@ -15,8 +15,10 @@ import {
   Europe,
   Oceania,
   TitlePart,
+  DropdownPart,
   SearchPart,
-  Title
+  Title,
+  TitlePill
  } from './schoolsListStyles'
  import './searchStyles.css';
  import './collapsibleStyles.css';
@@ -183,7 +185,7 @@ const SchoolsList = ({}) => {
       { name: "Central Europe", 
         schools: ["🇨🇿 Charles University", 
                   "🇵🇱 University of Warsaw", 
-                  "🇭🇺 versity of Szeged", 
+                  "🇭🇺 University of Szeged", 
                   "🇨🇿 Brno University of Technology", 
                   "🇷🇸 University of Belgrade", ]
       },
@@ -226,8 +228,14 @@ const SchoolsList = ({}) => {
       </IndexSection> */}
       
       <Africa>
-        <Title>🌍 Africa</Title>
-        <ControlledAccordion subregions={AfricanSubregions}/>
+        <TitlePart>
+          <TitlePill>
+            <Title>🌍 Africa</Title>
+          </TitlePill> 
+        </TitlePart>
+        <DropdownPart>
+          <ControlledAccordion subregions={AfricanSubregions}/>
+        </DropdownPart>
       </Africa>
 
       <Americas>

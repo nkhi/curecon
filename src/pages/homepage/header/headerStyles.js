@@ -9,6 +9,10 @@ export const NavigationContainer = styled.div`
   justify-content: space-between;
   min-height: 15vh;
   background-color: ${headerGray};
+
+  @media (max-width: 1400px) {
+    background-color: ${mainWhite};
+  }
 `
 export const TitleSection = styled.div`
   display: flex;
@@ -20,11 +24,15 @@ export const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 0 4rem;
+
+  @media screen (min-width > 1400px) {
+    display: none;
+  }
 `
 
 export const CureconText = styled.a`
   font-weight: 700;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-family: 'Space Mono', monospace;
   font-style: normal;
   text-align: left;
@@ -38,11 +46,11 @@ export const CureconText = styled.a`
 `
 
 export const NavButton = styled.a`
-  margin: 0.75rem;
+  margin: 0 0.75rem;
   color: ${mainWhite};
   text-decoration: none;
   font-family: 'Helvetica-Bold';
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
@@ -66,5 +74,15 @@ export const EmojiImage = styled.img`
     @media (prefers-reduced-motion: no-preference) {
       animation: App-logo-spin 2s linear;
     }
+  }
+`
+
+export const MobileMenu = styled.div`
+  @media screen  and (min-width > 0px) and (max-width < 1400px){
+    display: block;
+  }
+
+  @media screen and (min-width > 1401px) {
+    display: none;
   }
 `
