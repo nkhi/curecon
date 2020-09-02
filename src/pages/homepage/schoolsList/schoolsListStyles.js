@@ -30,7 +30,7 @@ export const Region = styled.div`
 export const GridContainer = styled.div`
   /* background: rgb(228,230,235);
   background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%); */
-  background: #aad3df;
+  background: #89c8db;
   min-height: 30vh;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
