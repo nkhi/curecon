@@ -1,8 +1,6 @@
 import React from 'react'
 
 // dependancies
-import Select from 'react-dropdown-select'; // search bar component
-import Collapsible from 'react-collapsible';
 import ControlledAccordion from './controlledAccordion'
 
 //styles
@@ -24,191 +22,182 @@ import {
  import './collapsibleStyles.css';
 
 const SchoolsList = ({}) => {
-  const options = [
-    { label: "Alligators", value: 1 },
-    { label: "Crocodiles", value: 2 },
-    { label: "Sharks", value: 3 },
-    { label: "Small crocodiles", value: 4 },
-    { label: "Smallest crocodiles", value: 5 },
-    { label: "Snakes", value: 6 },
-  ]
-
   // TODO: Seperate these maps into a JSON objects to resuse
   const AfricanSubregions = [
     { name: "North Africa & the Middle East", 
-      schools: ["🇱🇧 American University of Beirut", 
-                "🇮🇱 Hebrew University of Jerusalem", 
-                "🇪🇬 American University of Cairo", 
-                "🇲🇦 Mohammed V University Rabat", 
-                "🇹🇷 Boğaziçi University"] 
+      schools: [{emoji: "🇱🇧", name: "American University of Beirut", shortcode: "aub"}, 
+                {emoji: "🇮🇱", name: "Hebrew University of Jerusalem", shortcode: "huj"},
+                {emoji: "🇪🇬", name: "American University of Cairo", shortcode: "auc"},
+                {emoji: "🇲🇦", name: "Mohammed V University Rabat", shortcode: "mvur"},
+                {emoji: "🇹🇷", name: "Boğaziçi University", shortcode: "boun"}] 
     },
     { name: "East Africa", 
-      schools: ["🇰🇪 University of Nairobi", 
-                "🇪🇹 Addis Ababa University", 
-                "🇹🇿 University of Dar es Salaam", 
-                "🇺🇬 Makerere University", 
-                "🇰🇪 Moi University"] 
+      schools: [{emoji: "🇰🇪", name: "University of Nairobi",  shortcode: "unairobi"},
+                {emoji: "🇪🇹", name: "Addis Ababa University",  shortcode: "aau"},
+                {emoji: "🇹🇿", name: "University of Dar es Salaam",  shortcode: "udsm"},
+                {emoji: "🇺🇬", name: "Makerere University",  shortcode: "maku"},
+                {emoji: "🇰🇪", name: "Moi University",  shortcode: "moiu"},] 
     },
     { name: "West Africa", 
-      schools: ["🇳🇬 Covenant University", 
-                "🇳🇬 UNILAG", 
-                "🇬🇭 University of Ghana", 
-                "🇳🇦 University of Namibia", 
-                "🇸🇩 Sudan University of Science and Technology"] 
+      schools: [{emoji: "🇳🇬", name: "Covenant University", shortcode: "covu"},
+                {emoji: "🇳🇬", name: "University of Lagos", shortcode: "unilag"},
+                {emoji: "🇬🇭", name: "University of Ghana", shortcode: "ughana"},
+                {emoji: "🇳🇦", name: "University of Namibia", shortcode: "unambia"},
+                {emoji: "🇸🇩", name: "Sudan University of Science and Technology", shortcode: "sustech"},] 
     },
     { name: "Central Sub-Saharan Africa", 
-      schools: ["🇨🇬 Marien Ngouabi University", 
-                "🇨🇫 Université de Bangui", 
-                "🇦🇴 Universidade Católica de Angola", 
-                "🇨🇩 University of Kinshasa", 
-                "🇬🇶 National University of Equatorial Guinea"] 
+      schools: [{emoji: "🇨🇬", name: "Marien Ngouabi University",  shortcode: "mgu"},
+                {emoji: "🇨🇫", name: "Université de Bangui",  shortcode: "udb"},
+                {emoji: "🇦🇴", name: "Universidade Católica de Angola",  shortcode: "uca"},
+                {emoji: "🇨🇩", name: "University of Kinshasa",  shortcode: "ukinshasa"},
+                {emoji: "🇬🇶", name: "National University of Equatorial Guinea",  shortcode: "unge"},] 
     },
     { name: "South Africa", 
-      schools: ["🇿🇦 University of Cape Town", 
-                "🇿🇦 University of the Witwatersrand", 
-                "🇿🇦 Stellenbosch University"] 
+      schools: [{emoji: "🇿🇦", name: "University of Cape Town",  shortcode: "uct"},
+                {emoji: "🇿🇦", name: "University of the Witwatersrand", shortcode: "wits"}, 
+                {emoji: "🇿🇦", name: "Stellenbosch University",  shortcode: "su"},] 
     }, 
   ]
 
   const AmericanSubregions = [
       { name: "North America", 
-        schools: ["🇨🇦 University of Toronto", 
-                  "🇨🇦 University of British Columbia", 
-                  "🇨🇦 McGill University", 
-                  "🇨🇦 Dalhousie University", 
-                  "🇨🇦 University of Alberta", 
-                  "🇨🇦 McMaster University", 
-                  "🇨🇦 University of Guelph", 
-                  "🇨🇦 Simon Fraser University", 
-                  "🇨🇦 University of Victoria", 
-                  "🇨🇦 University of Calgary", 
-                  "🇺🇸 Harvard University", 
-                  "🇺🇸 University of California, Berkeley", 
-                  "🇺🇸 New York University", 
-                  "🇺🇸 Arizona State University", 
-                  "🇺🇸 Liberty University", 
-                  "🇺🇸 UCLA", 
-                  "🇺🇸 Stanford University", 
-                  "🇺🇸 Case Western Reserve", 
-                  "🇺🇸 University of Minnesota, Twin Cities", 
-                  "🇺🇸 Colorado State University", 
-                  "🇺🇸 Johns Hopkins University", 
-                  "🇺🇸 Georgia Institute of Technology", 
-                  "🇺🇸 Emory University", 
-                  "🇺🇸 Northwestern University", 
-                  "🇺🇸 Tufts University"]
+        schools: [{emoji: "🇨🇦", name: "University of Toronto", shortcode: "uoft"},
+                  {emoji: "🇨🇦", name: "University of British Columbia", shortcode: "ubc"},
+                  {emoji: "🇨🇦", name: "McGill University", shortcode: "mcgill"},
+                  {emoji: "🇨🇦", name: "Dalhousie University", shortcode: "dal"},
+                  {emoji: "🇨🇦", name: "University of Alberta", shortcode: "ualberta"},
+                  {emoji: "🇨🇦", name: "McMaster University", shortcode: "mac"},
+                  {emoji: "🇨🇦", name: "University of Guelph", shortcode: "uguelph"},
+                  {emoji: "🇨🇦", name: "Simon Fraser University", shortcode: "sfu"},
+                  {emoji: "🇨🇦", name: "University of Victoria", shortcode: "uvic"},
+                  {emoji: "🇨🇦", name: "University of Calgary", shortcode: "ucalgary"},
+                  {emoji: "🇺🇸", name: "Harvard University", shortcode: "harvard"},
+                  {emoji: "🇺🇸", name: "New York University", shortcode: "nyu"},
+                  {emoji: "🇺🇸", name: "Arizona State University", shortcode: "asu"},
+                  {emoji: "🇺🇸", name: "Liberty University", shortcode: "uliberty"},
+                  {emoji: "🇺🇸", name: "University of California, Berkeley", shortcode: "ucb"},
+                  {emoji: "🇺🇸", name: "University of California, LA", shortcode: "ucla"},
+                  {emoji: "🇺🇸", name: "Stanford University", shortcode: "stanford"},
+                  {emoji: "🇺🇸", name: "Case Western Reserve", shortcode: "cwr"},
+                  {emoji: "🇺🇸", name: "University of Minnesota, Twin Cities", shortcode: "umn"},
+                  {emoji: "🇺🇸", name: "Colorado State University", shortcode: "csu"},
+                  {emoji: "🇺🇸", name: "Johns Hopkins University", shortcode: "jhu"},
+                  {emoji: "🇺🇸", name: "Georgia Institute of Technology", shortcode: "git"},
+                  {emoji: "🇺🇸", name: "Emory University", shortcode: "emory"},
+                  {emoji: "🇺🇸", name: "Northwestern University", shortcode: "nwu"},
+                  {emoji: "🇺🇸", name: "Tufts University", shortcode: "tufts"},]
       },
       { name: "Southern Latin America", 
-        schools: ["🇺🇾 University of Montevideo",
-                  "🇦🇷 National University of Córdoba",
-                  "🇦🇷 National University of Cuyo",
-                  "🇨🇱 Diego Portales University",
-                  "🇨🇱 University of Chile", ]
+        schools: [{emoji: "🇺🇾", name: "University of Montevideo", shortcode: "umv"},
+                  {emoji: "🇦🇷", name: "National University of Córdoba", shortcode: "uncordoba"},
+                  {emoji: "🇦🇷", name: "National University of Cuyo", shortcode: "uncuyo"},
+                  {emoji: "🇨🇱", name: "Diego Portales University", shortcode: "dpu"},
+                  {emoji: "🇨🇱", name: "University of Chile",shortcode: "uchile"},]
       },
       { name: "Central Latin America", 
-        schools: ["🇲🇽 Universidad Nacional Autónoma de México (UNAM)", 
-                  "🇲🇽 Tecnológico de Monterrey",
-                  "🇸🇻 Universidad de El Salvador",
-                  "🇨🇴 Universidad de Los Andes Colombia",
-                  "🇨🇷 Universidad de Costa Rica", ]
+        schools: [{emoji: "🇲🇽", name: "Universidad Nacional Autónoma de México", shortcode: "unam"},
+                  {emoji: "🇲🇽", name: "Tecnológico de Monterrey (ITESM)",shortcode: "itesm"},
+                  {emoji: "🇸🇻", name: "Universidad de El Salvador",shortcode: "ues"},
+                  {emoji: "🇨🇴", name: "Universidad de Los Andes Colombia",shortcode: "ulac"},
+                  {emoji: "🇨🇷", name: "Universidad de Costa Rica", shortcode: "ucr"},]
       },
       { name: "Tropic States", 
-        schools: ["🇧🇷 University of São Paulo", 
-                  "🇧🇷 Federal University of Minas Gerais", 
-                  "🇧🇷 Pontifical Catholic University of Rio de Janeiro", 
-                  "🇵🇾 Autonomous University of Asunción", 
-                  "🇧🇷 University of Brasília", ]
+        schools: [{emoji: "🇧🇷", name: "University of São Paulo", shortcode: "usp"},
+                  {emoji: "🇧🇷", name: "Federal University of Minas Gerais", shortcode: "ufmg"},
+                  {emoji: "🇧🇷", name: "Pontifical Catholic University of Rio de Janeiro", shortcode: "curj"},
+                  {emoji: "🇵🇾", name: "Autonomous University of Asunción", shortcode: "uaa"},
+                  {emoji: "🇧🇷", name: "University of Brasília", shortcode: "ub"},]
       },
       { name: "Andean States", 
-        schools: ["🇵🇪 Universidad Peruana Cayetano Heredia", 
-                  "🇧🇴 Universidad Mayor de San Simon",
-                  "🇵🇪 Pontificia Universidad Católica del Perú", 
-                  "🇪🇨 Universidad San Francisco de Quito", 
-                  "🇵🇷 Escuela Superior Politécnica del Litoral", ]
+        schools: [{emoji: "🇵🇪", name: "Universidad Peruana Cayetano Heredia", shortcode: "upch"},
+                  {emoji: "🇧🇴", name: "Universidad Mayor de San Simon",shortcode: "umss"},
+                  {emoji: "🇵🇪", name: "Pontificia Universidad Católica del Perú", shortcode: "pucp"},
+                  {emoji: "🇪🇨", name: "Universidad San Francisco de Quito", shortcode: "usfq"},
+                  {emoji: "🇵🇷", name: "Escuela Superior Politécnica del Litoral", shortcode: "espl"},]
       },
       { name: "Carribean", 
-        schools: ["🇨🇺 University of Peurto Rico", 
-                  "🇨🇺 Universidad Central 'Marta Abreu' de Las Villas", 
-                  "🇯🇲 University of the West Indies", 
-                  "🇹🇹 University of Trinidad and Tabago", 
-                  "🇬🇩 St. Georges University" ]
+        schools: [{emoji: "🇨🇺", name: "University of Peurto Rico", shortcode: "upr"},
+                  {emoji: "🇨🇺", name: "Universidad Central 'Marta Abreu' de Las Villas", shortcode: "uclv"},
+                  {emoji: "🇯🇲", name: "University of the West Indies", shortcode: "uwi"},
+                  {emoji: "🇹🇹", name: "University of Trinidad and Tabago", shortcode: "utt"},
+                  {emoji: "🇬🇩", name: "St. Georges University", shortcode: "stg"} ]
       },
   ]
 
   const AsianSubregions = [
       { name: "Central Asia", 
-        schools: ["🇰🇿 Al-Farabi Kazakh National University",
-                  "🇲🇳 National University of Mongolia", 
-                  "🇰🇬 University of Central Asia", 
-                  "🇺🇿 National University of Uzbekistan", 
-                  "🇦🇲 Yerevan State University", ]
+        schools: [{emoji: "🇰🇿", name: "Al-Farabi Kazakh National University",shortcode: "ukazakh"},
+                  {emoji: "🇲🇳", name: "National University of Mongolia", shortcode: "umongolia"},
+                  {emoji: "🇰🇬", name: "University of Central Asia", shortcode: "uca"},
+                  {emoji: "🇺🇿", name: "National University of Uzbekistan", shortcode: "unuzbek"},
+                  {emoji: "🇦🇲", name: "Yerevan State University", shortcode: "uyeveran"},]
       },
       { name: "East Asia", 
-        schools: ["🇹🇼 National Taiwan University", 
-                  "🇹🇼 Taipei Medical University", 
-                  "🇨🇳 Tsinghua University", 
-                  "🇨🇳 University of Science and Technology of China", 
-                  "🇨🇳 Peking University"]
+        schools: [{emoji: "🇹🇼", name: "National Taiwan University", shortcode: "ntu"},
+                  {emoji: "🇹🇼", name: "Taipei Medical University", shortcode: "tmu"},
+                  {emoji: "🇨🇳", name: "Tsinghua University", shortcode: "utsinghua"},
+                  {emoji: "🇨🇳", name: "University of Science and Technology of China", shortcode: "ustchina"},
+                  {emoji: "🇨🇳", name: "Peking University", shortcode: "upeking"},]
       },
       { name: "Southeast Asia", 
-        schools: ["🇱🇰 University of Peradeniya", 
-                  "🇲🇾 University of Malaya", 
-                  "🇻🇳 Hanoi University of Science and Technology", 
-                  "🇵🇭 University of the Philipines", 
-                  "🇹🇭 Mae Fah Luang University"]
+        schools: [{emoji: "🇱🇰", name: "University of Peradeniya", shortcode: "uperadeniya"}, 
+                  {emoji: "🇲🇾", name: "University of Malaya", shortcode: "umalaya"},
+                  {emoji: "🇻🇳", name: "Hanoi University of Science and Technology", shortcode: "usthanoi"},
+                  {emoji: "🇵🇭", name: "University of the Philippines", shortcode: "uphilippines"},
+                  {emoji: "🇹🇭", name: "Mae Fah Luang University", shortcode: "mflu"},]
       },
       { name: "South Asia", 
-        schools: ["🇧🇩 University of Dhaka", 
-                  "🇧🇹 Royal University of Bhutan", 
-                  "🇮🇳 University of Delhi", 
-                  "🇳🇵 Tribhuvan University", 
-                  "🇵🇰 Quaid-i-Azam University", ]
+        schools: [{emoji: "🇧🇩", name: "University of Dhaka", shortcode: "udhaka"},
+                  {emoji: "🇧🇹", name: "Royal University of Bhutan", shortcode: "rubhutan"},
+                  {emoji: "🇮🇳", name: "University of Delhi", shortcode: "udelhi"},
+                  {emoji: "🇳🇵", name: "Tribhuvan University", shortcode: "utribhuvan"},
+                  {emoji: "🇵🇰", name: "Quaid-i-Azam University", shortcode: "uqa"}]
       },
       { name: "Asia Pacific", 
-        schools: ["🇧🇳 Universiti Brunei Darussalam", 
-                  "🇯🇵 Tohoku University", 
-                  "🇯🇵 The University of Tokyo", 
-                  "🇸🇬 National University of Singapore", 
-                  "🇰🇷 Seoul National University", 
-                  "🇰🇵 Pyongyang University of Science and Technology"]
+        schools: [{emoji: "🇧🇳", name: "Universiti Brunei Darussalam", shortcode: "ubrunei"},
+                  {emoji: "🇯🇵", name: "Tohoku University", shortcode: "utohoku"},
+                  {emoji: "🇯🇵", name: "The University of Tokyo", shortcode: "utokyo"},
+                  {emoji: "🇸🇬", name: "National University of Singapore", shortcode: "usingapore"},
+                  {emoji: "🇰🇷", name: "Seoul National University", shortcode: "useoul"},
+                  {emoji: "🇰🇵", name: "Pyongyang University of Science and Technology", shortcode: "dprk"},]
       },
   ]
 
   const EuropeanSubregions = [
       { name: "Western Europe", 
-        schools: ["🇫🇷 Sorbonne Université", 
-                  "🇫🇷 Université de Bordeaux", 
-                  "🇩🇪 LMU Munich", 
-                  "🇧🇪 Katholieke Universiteit Leuven", 
-                  "🇳🇱 University of Amsterdam"]
+        schools: [{emoji: "🇫🇷", name: "Sorbonne Université", shortcode: "usorbonne"},
+                  {emoji: "🇫🇷", name: "Université de Bordeaux", shortcode: "ubordeaux"},
+                  {emoji: "🇩🇪", name: "LMU Munich", shortcode: "lmum"},
+                  {emoji: "🇧🇪", name: "Katholieke Universiteit Leuven", shortcode: "kul"},
+                  {emoji: "🇳🇱", name: "University of Amsterdam", shortcode: "uoa"},]
       },
       { name: "Central Europe", 
-        schools: ["🇨🇿 Charles University", 
-                  "🇵🇱 University of Warsaw", 
-                  "🇭🇺 University of Szeged", 
-                  "🇨🇿 Brno University of Technology", 
-                  "🇷🇸 University of Belgrade", ]
+        schools: [{emoji: "🇨🇿", name: "Charles University", shortcode: "charlesu"},
+                  {emoji: "🇵🇱", name: "University of Warsaw", shortcode: "uwarsaw"},
+                  {emoji: "🇭🇺", name: "University of Szeged", shortcode: "uszeged"},
+                  {emoji: "🇨🇿", name: "Brno University of Technology",shortcode: "ubrno"}, 
+                  {emoji: "🇷🇸", name: "University of Belgrade", shortcode: "ubelgrade"},]
       },
       { name: "Eastern Europe", 
-        schools: ["🇷🇺 Lomonosov Moscow State University (MSU)",
-                  "🇪🇪 University of Tartu", 
-                  "🇷🇺 Saint Petersburg State University", 
-                  "🇷🇺 Novosibirsk State University", ]
+        schools: [{emoji: "🇷🇺", name: "Lomonosov Moscow State University", shortcode: "msu"},
+                  {emoji: "🇪🇪", name: "University of Tartu", shortcode: "utartu"},
+                  {emoji: "🇷🇺", name: "Saint Petersburg State University", shortcode: "usp"},
+                  {emoji: "🇷🇺", name: "Novosibirsk State University", shortcode: "unsb"},]
       },
   ]
 
   const OceanicSubregions = [
       { name: "Australasia", 
-        schools: ["🇦🇺 University of Melbourne", 
-                  "🇦🇺 University of Sydney", 
-                  "🇦🇺 Bond University",
-                  "🇳🇿 The University of Auckland", 
-                  "🇳🇿 University of Otago"]
+        schools: [{emoji: "🇦🇺", name: "University of Melbourne", shortcode: "umelbourne"},
+                  {emoji: "🇦🇺", name: "University of Sydney", shortcode: "usydney"},
+                  {emoji: "🇦🇺", name: "Bond University",shortcode: "ubond"},
+                  {emoji: "🇳🇿", name: "The University of Auckland", shortcode: "uauckland"},
+                  {emoji: "🇳🇿", name: "University of Otago", shortcode: "uotago"},]
       },
       { name: "Oceania", 
-        schools: ["🇫🇯 The University of the South Pacific", 
-                  "🇬🇺 University of Guam", 
-                  "🇵🇬 University of Papua New Guinea"]
+        schools: [{emoji: "🇫🇯", name: "The University of the South Pacific", shortcode: "usouthpacific"},
+                  {emoji: "🇬🇺", name: "University of Guam", shortcode: "uguam"},
+                  {emoji: "🇵🇬", name: "University of Papua New Guinea", shortcode: "upng"},]
       },
   ]
 

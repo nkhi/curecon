@@ -1,5 +1,8 @@
 import React from 'react'
 
+// components
+import Emoji from '../../../components/emoji'
+
 //styles
 import {
   NavigationContainer,
@@ -29,11 +32,22 @@ const Header = ({ currentPage, setCurrentPage }) => (
     </MobileMenu>
 
     <ButtonsContainer>
-      <NavButton href="/map">📍 World Map</NavButton>
-      <NavButton href="/schools">🏫 Find your school</NavButton>
-      <NavButton href="/paper">📑 Research Paper</NavButton>
-      <NavButton href="/submit">🎙 Submit</NavButton>
-      <NavButton href="/about">🤓 About</NavButton>
+      <NavButton href="/map">
+        <Emoji margin symbol="📍" label="Location Pin"/> 
+        World Map
+      </NavButton>
+      <NavButton href="/schools">
+        <Emoji margin symbol="🏫" label="School Building"/> 
+        Find your school
+      </NavButton>
+      <NavButton href="/submit">
+        <Emoji margin symbol="🎙" label="Microphone"/> 
+        Submit
+      </NavButton>
+      <NavButton href="/about">
+        <Emoji margin symbol="🤓" label="Nerd"/>
+        About
+      </NavButton>
     </ButtonsContainer>
 
   </NavigationContainer>
