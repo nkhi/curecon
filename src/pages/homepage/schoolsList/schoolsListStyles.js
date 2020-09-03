@@ -36,7 +36,7 @@ export const GridContainer = styled.div`
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
   grid-template-rows: 1fr;
   gap: 1px 12px;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   grid-template-areas: ". Africa Americas Asia Europe Oceania .";
 
   @media screen and (max-width: 1488px) {
