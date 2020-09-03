@@ -3,29 +3,30 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 // Top-Level Pages
 import Homepage from './pages/homepage'
-// import InstitutionInformation from './pages/institutionInfo'
-// import Submission from './pages/submission'
+import SchoolInfo from './pages/schoolInfo'
+import Submission from './pages/submission'
 import About from './pages/about'
 
+// Top-level url routing
 const App = () => (
   <Router>
-    {/* <Switch>
+    <Switch>
       <Route path='/school/:schoolCode?'>
-        <InstitutionInformation />
+        <SchoolInfo />
       </Route>
     </Switch>
     <Switch>
       <Route path='/submit'>
         <Submission />
       </Route>
-    </Switch> */}
+    </Switch>
     <Switch>
       <Route path='/about'>
         <About />
       </Route>
     </Switch>
     <Switch>
-      <Route>
+      <Route exact path='/'>
         <Homepage />
       </Route>
     </Switch>

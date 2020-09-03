@@ -38,6 +38,27 @@ export const GridContainer = styled.div`
   gap: 1px 12px;
   padding: 2rem 0;
   grid-template-areas: ". Africa Americas Asia Europe Oceania .";
+
+  @media screen and (max-width: 1488px) {
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-rows: 1fr 0.65fr;
+    gap: 24px 12px;
+    grid-template-areas: ". Africa Americas Asia ." ". Europe Oceania . .";
+  }
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+    grid-template-rows: 1fr 0.65fr 0.4fr;
+    gap: 24px 12px;
+    grid-template-areas: ". Africa Americas ." ". Asia Europe ." ". Oceania . .";
+  }
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 0.05fr 1fr 0.05fr;
+    grid-template-rows: 0.8fr 1fr 0.87fr 0.5fr 0.4fr;
+    gap: 24px 12px;
+    grid-template-areas: ". Africa . " ". Americas ." ". Asia . " " . Europe ." ". Oceania .";
+  }
 `
 
 export const IndexSection = styled.div`

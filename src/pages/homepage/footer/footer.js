@@ -1,4 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
+
+// components
+import Emoji from '../../../components/emoji'
 
 //styles
 import {
@@ -10,21 +13,21 @@ import {
     AboutLinkArea,
     SubmitLinkArea,
    Disclaimer,
-   Emoji,
+   EmojiSection,
    EmojiImage,
    Link,
    NavLink,
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
-// import { RadialBg } from './landingBG'
+
 
 const Footer = () => {
 
   return(
     <GridContainer>
-      <Emoji>
+      <EmojiSection>
         <EmojiImage src={require('./assets/mask.png')}/>
-      </Emoji>
+      </EmojiSection>
       <CureconTextSection>
         <CureconText>
           COVID-19 University <br/> Response Consolidation
@@ -32,16 +35,28 @@ const Footer = () => {
       </CureconTextSection>
       <Links>
         <WorldMapLinkArea>
-          <NavLink href='/map'>📍 World Map</NavLink>
+          <NavLink href='/map'>
+            <Emoji margin symbol="📍" label="Location Pin"/> 
+            World Map
+          </NavLink>
         </WorldMapLinkArea>
         <SchoolLinkArea>
-          <NavLink href='/schools'>🏫 Find your school</NavLink>
+          <NavLink href='/schools'>
+            <Emoji margin symbol="🏫" label="School Building"/> 
+            Find your school
+          </NavLink>
         </SchoolLinkArea>
         <SubmitLinkArea>
-          <NavLink href='/submit'>🎙 Submit</NavLink>
+          <NavLink href='/submit'>
+            <Emoji margin symbol="🎙" label="Microphone"/>
+            Submit
+          </NavLink>
         </SubmitLinkArea>
         <AboutLinkArea>
-          <NavLink href='/about'>🤓 About</NavLink>
+          <NavLink href='/about'>
+            <Emoji margin symbol="🤓" label="Nerd"/> 
+            About
+          </NavLink>
         </AboutLinkArea>
       </Links>
       <Disclaimer>

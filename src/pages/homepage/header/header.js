@@ -14,7 +14,7 @@ import {
   MobileMenu
 } from './headerStyles'
 
-const Header = ({ currentPage, setCurrentPage }) => (
+const Header = () => (
   <NavigationContainer>
 
     <TitleSection>

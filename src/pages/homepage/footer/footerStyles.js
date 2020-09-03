@@ -75,7 +75,7 @@ export const Disclaimer = styled.div`
   text-align: left;
 `
 
-export const Emoji = styled.div`
+export const EmojiSection = styled.div`
   grid-area: Emoji;
   place-items: center;
   display: flex;
