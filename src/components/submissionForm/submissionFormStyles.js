@@ -21,6 +21,10 @@ export const GridContainer = styled.div`
   grid-template-rows: 2rem 1.25fr 1.25fr 1.25fr 1fr 1fr 1rem;
   gap: 1px 1px;
   grid-template-areas: ". . . ." ". University University ." ". Year Year ." ". Major Major ." " Rating Rating Rating Rating" ". Disclaimer Continue ." ". . . .";
+
+  @media screen and (max-width: 1570px) {
+    margin: 0;
+  }
 `
 
 export const University = styled.div`
@@ -58,7 +62,8 @@ export const RatingSection = styled.div`
   grid-template-columns: 0.17fr 1fr 1fr 0.15fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". Content Content .";
-  background-color: #2d2b13;
+  /* background-color: #2d2b13; */
+  background-color: #282500;
   padding: 1.25rem 0;
 `
 

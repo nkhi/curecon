@@ -31,6 +31,16 @@ export const TextSection = styled.div`
   justify-content: center;
   width: 100vw;
   color: ${shade};
+
+  @media screen and (max-width: 1570px) {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1390px) {
+    font-size: 2.5rem;
+  }
 `
 
 export const GridContainer = styled.div`
@@ -46,9 +56,16 @@ export const GridContainer = styled.div`
                       ". PaperDownload SubmissionSpace ."
                       ". . . .";
 
-/* @media screen and (max-width: 1460px) {
-    background: red;
-} */
+  @media screen and (max-width: 1570px) {
+    grid-template-columns: 2rem 1fr 620px 1fr 2rem;
+    grid-template-rows: 2rem 8rem 27rem 560px 2rem;
+    gap: 1px 1px;
+    grid-template-areas: ". . . . ." 
+                        ". CallToAction CallToAction CallToAction ." 
+                        ". . PaperDownload . ."
+                        ". . SubmissionSpace . ."
+                        ". . . . .";
+  }
 `
 
 export const CallToAction = styled.div`
@@ -60,13 +77,22 @@ export const CallToAction = styled.div`
 export const PaperDownload = styled.div`
   display: flex;
   grid-area: PaperDownload;
+
+  @media screen and (max-width: 1570px) {
+    place-items:center;
+  }
 `
 
 export const Blurb = styled.div`
   color: ${shade};
   text-align: right;
   font-size: 1.5em;
+  padding-top: 1rem;
 
+  @media screen and (max-width: 1570px) {
+    text-align: center;
+    padding: 0;
+  }
 `
 
 export const PDFDownload = styled.div`
@@ -75,10 +101,27 @@ export const PDFDownload = styled.div`
 
 export const SubmissionSpace = styled.div`
   grid-area: SubmissionSpace;
-  /* border-left: 1px solid ${shade}; */
+
+  @media screen and (max-width: 1570px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const Underline = styled.span`
   text-decoration: underline;
   margin: 0 0.5rem;
+  
+  @media screen and (max-width: 1390px){
+    display: inline-block;
+  }
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+
+  @media screen and (max-width: 1570px) {
+    padding-bottom: 2rem;
+  }
 `

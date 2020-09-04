@@ -21,7 +21,7 @@ const Landing = ({}) => (
 
     <CallToAction>
       <TextSection>      
-        How did <Underline> your </Underline> school respond to the COVID-19 pandemic?
+        How did your school respond to the COVID-19 pandemic?
       </TextSection>
     </CallToAction>
 
@@ -30,9 +30,8 @@ const Landing = ({}) => (
         The CURECON Project consolidates global university policy changes implemented in 
         response to the COVID-19 pandemic within the initial months of the outbreak. 
         <br/><br/> 
-        In addition to our research findings, we are also accepting student testimonials to 
-        be included on the map. Your responses will aid in understanding how univeristy policy 
-        influences student wellbeing, campus life, and public health outcomes. 
+        Explore our findings on the interactive map or dive deeper into the data in the university information pages. If you would like to share your own experiences, please use the submission form. 
+        Your responses will aid in understanding how univeristy policy influences student wellbeing, campus life, and public health outcomes. 
         <br/><br/>
         
         <a href='/map'>

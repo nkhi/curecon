@@ -18,11 +18,11 @@ WhiteLabel,
 Input,
 ContinueButton,
 DisclaimerText,
-Link,
 Disclaimer,
 Face,
 IconSpace,
-TextDisclaimer
+TextDisclaimer,
+Link
 } from './submissionFormStyles'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -74,12 +74,12 @@ const SubmissionForm = ({}) => {
         </Disclaimer>
 
         <Continue>
-          <a href='/submit' style={{textDecoration: 'none'}}>
+          <Link href='/submit'>
             <ContinueButton>
               Continue
               <NavigateNextIcon />
             </ContinueButton>
-          </a>
+          </Link>
         </Continue>
       </GridContainer>
   )
