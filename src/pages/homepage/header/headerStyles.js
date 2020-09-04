@@ -47,7 +47,7 @@ export const NavButton = styled.a`
   color: ${mainWhite};
   text-decoration: none;
   font-family: 'Helvetica-Bold';
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;

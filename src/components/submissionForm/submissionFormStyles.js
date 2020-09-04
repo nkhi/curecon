@@ -18,7 +18,7 @@ export const GridContainer = styled.div`
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 0.15fr 1fr 1fr 0.15fr;
-  grid-template-rows: 0.25fr 1.25fr 1.25fr 1.25fr 1fr 1fr 0.15fr;
+  grid-template-rows: 2rem 1.25fr 1.25fr 1.25fr 1fr 1fr 1rem;
   gap: 1px 1px;
   grid-template-areas: ". . . ." ". University University ." ". Year Year ." ". Major Major ." " Rating Rating Rating Rating" ". Disclaimer Continue ." ". . . .";
 `
@@ -157,7 +157,7 @@ export const Link = styled.a`
 `
 
 export const Face = styled(FaceIcon)`
-  color: ${shade};
+  color: #865a06;
   font-size: 2rem !important;
 `
 

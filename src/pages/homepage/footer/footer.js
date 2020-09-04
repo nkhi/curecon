@@ -20,17 +20,15 @@ import {
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
 
-
 const Footer = () => {
-
   return(
     <GridContainer>
       <EmojiSection>
         <EmojiImage src={require('./assets/mask.png')}/>
       </EmojiSection>
       <CureconTextSection>
-        <CureconText>
-          COVID-19 University <br/> Response Consolidation
+        <CureconText id="swap">
+          COVID-19 University <br/>Response Consolidation
         </CureconText>
       </CureconTextSection>
       <Links>
