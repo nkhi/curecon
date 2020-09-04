@@ -161,6 +161,12 @@ export const Link = styled.a`
   }
 `
 
+export const BlandLink = styled(Link)`
+  &:hover{
+    text-decoration: none;
+  }
+`
+
 export const Face = styled(FaceIcon)`
   color: #865a06;
   font-size: 2rem !important;

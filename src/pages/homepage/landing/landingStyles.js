@@ -113,9 +113,6 @@ export const Underline = styled.span`
   text-decoration: underline;
   margin: 0 0.5rem;
   
-  @media screen and (max-width: 1390px){
-    display: inline-block;
-  }
 `
 
 export const Link = styled.a`

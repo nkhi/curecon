@@ -22,7 +22,7 @@ Disclaimer,
 Face,
 IconSpace,
 TextDisclaimer,
-Link
+Link, BlandLink
 } from './submissionFormStyles'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -43,14 +43,14 @@ const SubmissionForm = ({}) => {
             <Label>How long have you attended university?</Label>
             <Input 
               type='text' 
-              placeholder='ex. 3 years, entering 4th year, etc'
+              placeholder='ex. 4 years, incoming freshman, etc'
             />
           </Year>
           <Major>
             <Label>What do you study?</Label>
             <Input 
               type='text' 
-              placeholder='ex. Marine Biology'
+              placeholder='ex. Marine Biology, Halloween Studies, etc'
             />
           </Major>
         {/* </DegreeInfo> */}
@@ -74,12 +74,12 @@ const SubmissionForm = ({}) => {
         </Disclaimer>
 
         <Continue>
-          <Link href='/submit'>
+          <BlandLink href='/submit'>
             <ContinueButton>
               Continue
               <NavigateNextIcon />
             </ContinueButton>
-          </Link>
+          </BlandLink>
         </Continue>
       </GridContainer>
   )
