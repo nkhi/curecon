@@ -31,6 +31,13 @@ export const GridContainer = styled.div`
   grid-template-areas: ". . . . ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Disclaimer Disclaimer Disclaimer .";
   background: rgb(32,32,32);
   min-height: 35vh;
+
+  /* @media screen and (max-width: 909px) {
+    grid-template-columns: 0.05fr 0.15fr 1fr 0.05fr;
+    grid-template-rows: 0.05fr 0.25fr 0.25fr 6rem 0.05fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . . ." ". Emoji CureconText ." ". Emoji CureconText ." ". Links Links ." ". . . ." ". Disclaimer Disclaimer .";
+  } */
 `
 export const CureconTextSection = styled.div`
   grid-area: CureconText;
@@ -46,6 +53,14 @@ export const Links = styled.div`
   gap: 1px 1px;
   grid-template-areas: ". ." ". WorldMap" ". School" ". Submit" " . About" ". ." ;
   padding: 4rem 0;
+
+  /* @media screen and (max-width: 909px) {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 12px 12px;
+    grid-template-areas: "WorldMap School Submit About";
+  } */
 `
 
 export const WorldMapLinkArea = styled.div`

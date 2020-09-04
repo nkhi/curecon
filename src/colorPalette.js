@@ -1,5 +1,7 @@
 export const mainDark = "#201826"
 export const shade = "#1c1c1c"
+export const offShade = "#383838"
+export const labelBlue = "#1b3992"
 
 export const mainWhite = "#eae7da"
 

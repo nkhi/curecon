@@ -41,16 +41,16 @@ const Landing = ({}) => (
         <br/> <br/> */}
         <ButtonsContainer>
           <a href='/map'>
-            <ExploreMapButton>
+            <ReadPaperButton>
               📍 Explore the Map            
-            </ExploreMapButton>
+            </ReadPaperButton>
           </a>
 
-          <a href='/paper'>
+          {/* <a href='/paper'>
             <ReadPaperButton>
               📑 Read the Report
             </ReadPaperButton>
-          </a>
+          </a> */}
         </ButtonsContainer>
 
       </Blurb>

@@ -11,7 +11,10 @@ DegreeInfo,
   Year,
   Major,
 RatingSection,
+RatingContent,
 Continue,
+Label,
+WhiteLabel,
 Input,
 ContinueButton,
 DisclaimerText,
@@ -29,37 +32,43 @@ const SubmissionForm = ({}) => {
   return(
       <GridContainer>
         <University>
+          <Label>What University do you go to?</Label>
           <Input 
             type='text' 
-            placeholder='What University do you go to?'
+            placeholder='ex. Georgia Institute of Technology'
           />
         </University>
-        <DegreeInfo>
+        {/* <DegreeInfo> */}
           <Year>
+            <Label>How long have you attended university?</Label>
             <Input 
               type='text' 
-              placeholder='What year of study are you in?'
+              placeholder='ex. 3 years, entering 4th year, etc'
             />
           </Year>
           <Major>
+            <Label>What do you study?</Label>
             <Input 
               type='text' 
-              placeholder='What is your area of study?'
+              placeholder='ex. Marine Biology'
             />
           </Major>
-        </DegreeInfo>
+        {/* </DegreeInfo> */}
         <RatingSection>
-          <Rating 
-            size="large" 
-            defaultValue={5} 
-            max={10} 
-          />  
+          <RatingContent>
+            <WhiteLabel>Overall Rating of COVID-19 response:</WhiteLabel>
+            <Rating 
+              size="large" 
+              defaultValue={5} 
+              max={10} 
+            />  
+          </RatingContent>
         </RatingSection>
         <Disclaimer>
           <IconSpace><Face /></IconSpace>
           <TextDisclaimer>
           <DisclaimerText>
-            <Link href='/data'>Read our Data Privacy Statement</Link> <br/> TL;DR: it's completely anonymous. 
+            <Link href='/data-privacy'>Read our Data Privacy Statement</Link> <br/> TL;DR: it's completely anonymous. 
           </DisclaimerText>
           </TextDisclaimer>
         </Disclaimer>

@@ -1,28 +1,32 @@
 import styled from 'styled-components';
-import { mainYellow } from '../../colorPalette'
+import { mainYellow, shade, offShade, labelBlue } from '../../colorPalette'
 
 //icons
 import FaceIcon from '@material-ui/icons/Face';
 
 export const GridContainer = styled.div`
-  height: 34vh;
-  width: 35vw;
-  background: rgb(226,34,63);
-  background: linear-gradient(145deg, rgba(226,34,63,1) 0%, rgba(175,5,31,1) 100%);
+  height: 540px;
+  max-width: 580px;
+  /* background: rgb(226,34,63);
+  background: linear-gradient(145deg, rgba(226,34,63,1) 0%, rgba(175,5,31,1) 100%); */
+  background: rgb(253,195,45);
+  background: linear-gradient(150deg, rgba(253,195,45,1) 0%, rgba(222,146,4,1) 100%);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  margin: 0 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  border: 2px solid rgba(232, 232, 232, 0.75);
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 0.15fr 1fr 1fr 0.15fr;
-  grid-template-rows: 0.25fr 1.25fr 1.25fr 1fr 1fr 0.15fr;
+  grid-template-rows: 0.25fr 1.25fr 1.25fr 1.25fr 1fr 1fr 0.15fr;
   gap: 1px 1px;
-  grid-template-areas: ". . . ." ". University University ." ". DegreeInfo DegreeInfo ." " Rating Rating Rating Rating" ". Disclaimer Continue ." ". . . .";
+  grid-template-areas: ". . . ." ". University University ." ". Year Year ." ". Major Major ." " Rating Rating Rating Rating" ". Disclaimer Continue ." ". . . .";
 `
 
 export const University = styled.div`
   grid-area: University;
   display: flex;
-  align-items: center;
+  flex-flow: column;
 `
 
 export const DegreeInfo = styled.div`
@@ -38,24 +42,28 @@ export const Year = styled.div`
   grid-area: Year;
   /* margin-right: 2.1rem; MEDIA QUERY*/
   display: flex;
-  align-items: center;
+  flex-flow: column;
 `
 
 export const Major = styled.div`
   grid-area: Major;
   /* margin-right: 2.1rem; MEDIA QUERY*/
   display: flex;
-  align-items: center;
+  flex-flow: column;
 `
 
 export const RatingSection = styled.div`
   grid-area: Rating;
+  display: grid;
+  grid-template-columns: 0.17fr 1fr 1fr 0.15fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". Content Content .";
+  background-color: #2d2b13;
   padding: 1.25rem 0;
-  /* background-color: #990b20; */
-  background-color: #e82744;
-  display: flex;
-  place-items: center;
-  justify-content: center;
+`
+
+export const RatingContent = styled.div`
+  grid-area: Content;
 `
 
 export const Continue = styled.div`
@@ -89,7 +97,7 @@ export const TextDisclaimer = styled.div`
 
 export const Input = styled.input`
   width: 100%;
-  background-color: #990b20;
+  background-color: #de9204;
   /* color: white;
   font-family: 'Helvetica-Bold'; */
   /* border: 1px solid #c6332c; */
@@ -97,6 +105,7 @@ export const Input = styled.input`
   border-radius: 10px;
   height: 4rem;
   padding: 0 1rem;
+  max-width: 472px;
 `
 
 export const ContinueButton = styled.button`
@@ -124,17 +133,22 @@ export const ContinueButton = styled.button`
 
 export const Label = styled.div`
   font-size: 0.8em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: left;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: ${shade};
 `
 
 export const DisclaimerText = styled.div`
   font-size: 0.8em;
+  color: ${offShade};
 `
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${mainYellow};
+  color: ${shade};
   font-weight: 700;
 
   &:hover{
@@ -143,6 +157,10 @@ export const Link = styled.a`
 `
 
 export const Face = styled(FaceIcon)`
-  color: #990b20;
+  color: ${shade};
   font-size: 2rem !important;
+`
+
+export const WhiteLabel = styled(Label)`
+  color: #e3e3e3;
 `
