@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Icon } from 'leaflet' 
-import * as universityData from '../../../data/universityData.json'
+import * as demographicData from '../../../data/demographics.json'
+
 //styles
 import { Layout } from './mapStyles'
 import './mapStyles.css'
@@ -16,24 +17,24 @@ const MapContainer = ({}) => {
 
   return(
     <Layout>
-      <Map center={[43.653225, -79.383186]} zoom={5}>
+      <Map center={[4.36139, 18.55528]} zoom={3}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        {universityData.features.map(school => 
+        {demographicData.default.features.map(school => 
           <Marker 
-            key={school.PARK_ID} 
-            position={ [school.geometry.coordinates[1], school.geometry.coordinates[0]] } 
+            key={school.ranking} 
+            position={ [school.LATITUDE, school.LONGITUDE] } 
             onClick={() => setActiveSchool(school)}
             icon={gradCap}
           />
         )}
         {activeSchool && 
           <Popup 
-            position={ [activeSchool.geometry.coordinates[1], activeSchool.geometry.coordinates[0]] }
+            position={ [activeSchool.LATITUDE, activeSchool.LONGITUDE] }
             onClose={() => setActiveSchool(null)}>
-              <h2>{activeSchool.properties.NAME}</h2>
+              <h2>{activeSchool.NAME}</h2>
           </Popup>
         }
       </Map>
