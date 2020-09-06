@@ -28,6 +28,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 const SubmissionForm = ({}) => {
   const [ userData, setUserData ] = useState({}) 
+  const [ currentRating, setCurrentRating ] = useState(5) 
 
   return(
       <GridContainer>
@@ -54,13 +55,14 @@ const SubmissionForm = ({}) => {
             />
           </Major>
         {/* </DegreeInfo> */}
-        <RatingSection>
+        <RatingSection value={currentRating}>
           <RatingContent>
             <WhiteLabel>Overall Rating of COVID-19 response:</WhiteLabel>
             <Rating 
               size="large" 
               defaultValue={5} 
               max={10} 
+              onChangeActive={(event, value) => setCurrentRating(value)}
             />  
           </RatingContent>
         </RatingSection>

@@ -49,7 +49,7 @@ export const GridContainer = styled.div`
   /* min-height: 67vh; */
   display: grid;
   grid-template-columns: 0.5fr 30rem 40rem 0.5fr;
-  grid-template-rows: 2rem 10rem 0.85fr 2rem;
+  grid-template-rows: 2rem 9rem 0.85fr 2rem;
   gap: 1px 1px;
   grid-template-areas: ". . . ." 
                       "CallToAction CallToAction CallToAction CallToAction" 

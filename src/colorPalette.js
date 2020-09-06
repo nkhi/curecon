@@ -27,3 +27,6 @@ export const lightPurple = "#542649"
 
 export const headerGray = "#202020"
 export const landingBlack = "0d0d0d"
+
+// For Submission Modal
+export const modalRed = "#8f071c";

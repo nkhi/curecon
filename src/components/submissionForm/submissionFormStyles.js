@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mainYellow, shade, offShade, labelBlue } from '../../colorPalette'
+import { mainYellow, shade, offShade, modalRed, pineGreen } from '../../colorPalette'
 
 //icons
 import FaceIcon from '@material-ui/icons/Face';
@@ -63,7 +63,9 @@ export const RatingSection = styled.div`
   grid-template-rows: 1fr;
   grid-template-areas: ". Content Content .";
   /* background-color: #2d2b13; */
-  background-color: #282500;
+  background-color: ${({value}) => value > 5 ? `${pineGreen}` 
+                                    :  value < 5 && value !== -1 ? `${modalRed}` 
+                                    : `rgb(60, 60, 58)`};
   padding: 1.25rem 0;
 `
 
