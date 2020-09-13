@@ -42,19 +42,19 @@ const Header = () => {
 
       <ButtonsContainer>
         <NavButton href="/map">
-          <Emoji margin symbol="📍" label="Location Pin"/> 
+          {/* <Emoji margin symbol="📍" label="Location Pin"/>  */}
           World Map
         </NavButton>
         <NavButton href="/schools">
-          <Emoji margin symbol="🏫" label="School Building"/> 
+          {/* <Emoji margin symbol="🏫" label="School Building"/>  */}
           Find your school
         </NavButton>
         <NavButton href="/submit">
-          <Emoji margin symbol="🎙" label="Microphone"/> 
+          {/* <Emoji margin symbol="🎙" label="Microphone"/>  */}
           Submit
         </NavButton>
         <NavButton href="/about">
-          <Emoji margin symbol="🤓" label="Nerd"/>
+          {/* <Emoji margin symbol="🤓" label="Nerd"/> */}
           About
         </NavButton>
       </ButtonsContainer>

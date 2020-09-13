@@ -46,7 +46,7 @@ export const TextSection = styled.div`
 export const GridContainer = styled.div`
   background: rgb(228,230,235);
   background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%);
-  /* min-height: 67vh; */
+  min-height: 67vh;
   display: grid;
   grid-template-columns: 0.5fr 30rem 40rem 0.5fr;
   grid-template-rows: 2rem 9rem 0.85fr 2rem;

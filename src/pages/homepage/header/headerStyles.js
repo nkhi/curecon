@@ -43,7 +43,7 @@ export const CureconText = styled.a`
 `
 
 export const NavButton = styled.a`
-  margin: 0 0.75rem;
+  margin-left: 2rem;
   color: ${mainWhite};
   text-decoration: none;
   font-family: 'Helvetica-Bold';

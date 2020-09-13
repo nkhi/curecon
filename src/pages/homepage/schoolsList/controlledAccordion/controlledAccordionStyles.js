@@ -5,7 +5,7 @@ export const ListItem = styled.li`
   margin: 0.5rem 0;
 
   &:hover{
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-weight: 500;
     transition-duration: 100ms;
     transition-property: 'font-size';

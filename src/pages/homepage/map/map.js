@@ -7,8 +7,10 @@ import * as demographicData from '../../../data/demographics.json'
 import { Layout } from './mapStyles'
 import './mapStyles.css'
 
+//components
+import PopupContent from './popupContent'
+
 const MapContainer = ({}) => {
-  
   const [activeSchool, setActiveSchool] = useState(null)
   const gradCap = new Icon({
     iconUrl: './university.svg',
@@ -33,8 +35,10 @@ const MapContainer = ({}) => {
         {activeSchool && 
           <Popup 
             position={ [activeSchool.LATITUDE, activeSchool.LONGITUDE] }
-            onClose={() => setActiveSchool(null)}>
-              <h2>{activeSchool.NAME}</h2>
+            onClose={() => setActiveSchool(null)}
+            closeButton={true}
+            minWidth="420">
+              <PopupContent activeSchool={activeSchool}/>
           </Popup>
         }
       </Map>
