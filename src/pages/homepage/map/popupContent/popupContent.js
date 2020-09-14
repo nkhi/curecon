@@ -12,7 +12,8 @@ import {
   Section,
   DataLabel,
   RowContent,
-  SectionRow
+  SectionRow,
+  SeeMoreButton
 } from './popupContentStyles'
 
 const PopupContent = (activeSchool) => {

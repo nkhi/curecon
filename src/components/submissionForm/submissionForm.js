@@ -39,7 +39,6 @@ const SubmissionForm = ({}) => {
             placeholder='ex. Georgia Institute of Technology'
           />
         </University>
-        {/* <DegreeInfo> */}
           <Year>
             <Label>How long have you attended university?</Label>
             <Input 
@@ -54,7 +53,6 @@ const SubmissionForm = ({}) => {
               placeholder='ex. Marine Biology, Halloween Studies, etc'
             />
           </Major>
-        {/* </DegreeInfo> */}
         <RatingSection value={currentRating}>
           <RatingContent>
             <WhiteLabel>Overall Rating of COVID-19 response:</WhiteLabel>
@@ -70,7 +68,8 @@ const SubmissionForm = ({}) => {
           <IconSpace><Face /></IconSpace>
           <TextDisclaimer>
           <DisclaimerText>
-            <Link href='/data-privacy'>Read our Data Privacy Statement</Link> <br/> TL;DR: it's completely anonymous. 
+            <Link href='/data-privacy'>Read our Data Privacy Statement</Link> 
+            <br/> TL;DR: it's completely anonymous. 
           </DisclaimerText>
           </TextDisclaimer>
         </Disclaimer>

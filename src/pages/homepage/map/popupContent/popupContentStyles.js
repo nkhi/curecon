@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {shade} from '../../../../colorPalette'
+import {shade, mainGreen} from '../../../../colorPalette'
 
 import ExploreIcon from '@material-ui/icons/Explore';
 import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
@@ -63,5 +63,12 @@ export const DataLabel = styled.div`
 `
 
 export const RowContent = styled.div`
-  color: blue;
+  color: #000;
+`
+
+export const SeeMoreButton = styled.div`
+  background: ${mainGreen};
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px; 
+  font-size: 1.5em;
 `
