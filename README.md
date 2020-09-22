@@ -4,9 +4,11 @@ Curecon is an interactive corpus of global university responses to the coronavir
 Built using React, with CSS Modules, CSS Grid, Flexbox. and styled-components. <br/>
 Map built using Leaflet.js & Mapbox. Backend powered by Node.js and MySQL.
 
-Visit it here: http://uofcov.id
+To run locally: 
+- `git pull https://github.com/nkhi/curecon`
+- `npm i && npm start`
 
-To run locally: `npm i && npm start`
+**Visit it here: http://uofcov.id**
 
 ## Features still outstanding:
 - Landing Call To Action Text to cycle through multiple languages
