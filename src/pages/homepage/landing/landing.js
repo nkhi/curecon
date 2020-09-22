@@ -14,6 +14,8 @@ import {
     PaperDownload,
       Blurb,
     SubmissionSpace,
+    ButtonContent,
+    Map
 } from './landingStyles'
 
 const Landing = ({}) => (
@@ -36,8 +38,11 @@ const Landing = ({}) => (
         
         <a href='/map'>
           <ReadPaperButton>
-            <Emoji margin symbol="📍" label="Location Pin" />
-            Explore the Map            
+            <ButtonContent>
+              {/* <Emoji margin label="Location Pin" /> */}
+              <Map src={require('./assets/map2.png')} alt='Map with Location Pin'/>
+              Explore the Map           
+            </ButtonContent> 
           </ReadPaperButton>
         </a>
 

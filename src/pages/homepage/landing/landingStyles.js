@@ -21,6 +21,11 @@ export const ReadPaperButton = styled.button`
   }
 `
 
+export const ButtonContent = styled.div`
+  display: flex;
+  align-items: center;
+`
+
 export const ExploreMapButton = styled(ReadPaperButton)`
   margin-right: 1rem;
 `
@@ -127,4 +132,10 @@ export const Link = styled.a`
   @media screen and (max-width: 1570px) {
     padding-bottom: 2rem;
   }
+`
+
+export const Map = styled.img`
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
 `
