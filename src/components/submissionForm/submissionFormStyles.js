@@ -111,7 +111,7 @@ export const Input = styled.input`
   border: none;
   border-radius: 10px;
   height: 4rem;
-  padding: 0 1rem;
+  padding-left: 1rem;
   max-width: 472px;
 `
 
@@ -140,12 +140,12 @@ export const ContinueButton = styled.button`
 
 export const Label = styled.div`
   font-size: 0.8em;
-  /* text-transform: uppercase; */
   text-align: left;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 8px;
   color: ${shade};
+  font-weight: 'Rubik';
 `
 
 export const DisclaimerText = styled.div`
@@ -156,7 +156,6 @@ export const DisclaimerText = styled.div`
 export const Link = styled.a`
   text-decoration: none;
   color: ${shade};
-  font-weight: 700;
 
   &:hover{
     text-decoration: underline;

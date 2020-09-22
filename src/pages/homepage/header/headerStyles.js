@@ -44,10 +44,9 @@ export const CureconText = styled.a`
 
 export const NavButton = styled.a`
   margin-left: 2rem;
-  color: ${mainWhite};
+  color: #fff;
   text-decoration: none;
   font-family: 'Rubik';
-  /* font-size: 0.8em; */
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;

@@ -60,7 +60,7 @@ export const Martina = styled(Nikhi)`
   grid-area: G;
 `
 
-export const Abby = styled(Nikhi)`
+export const Uhhhhh = styled(Nikhi)`
   grid-area: H;
 `
 

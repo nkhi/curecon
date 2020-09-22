@@ -11,6 +11,7 @@ export const ReadPaperButton = styled.button`
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  /* margin-top: 3.73rem; */
 
   &:hover{
     background-color: #2EE59D;
@@ -32,20 +33,20 @@ export const TextSection = styled.div`
   width: 100vw;
   color: ${shade};
 
-  @media screen and (max-width: 1570px) {
+  @media screen and (max-width: 1645px) {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     width: 100%;
   }
 
-  @media screen and (max-width: 1390px) {
-    font-size: 2.5rem;
-  }
+  /* @media screen and (max-width: 1390px) {
+    margin-bottom: 2rem;
+  } */
 `
 
 export const GridContainer = styled.div`
   background: rgb(228,230,235);
-  background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%);
+  background: linear-gradient(180deg, #fff 0%,rgb(244, 244, 244) 100%);
   min-height: 67vh;
   display: grid;
   grid-template-columns: 0.5fr 30rem 40rem 0.5fr;
@@ -58,7 +59,7 @@ export const GridContainer = styled.div`
 
   @media screen and (max-width: 1570px) {
     grid-template-columns: 2rem 1fr 620px 1fr 2rem;
-    grid-template-rows: 2rem 8rem 27rem 560px 2rem;
+    grid-template-rows: 2rem 8rem 29rem 600px 2rem;
     gap: 1px 1px;
     grid-template-areas: ". . . . ." 
                         ". CallToAction CallToAction CallToAction ." 
@@ -81,12 +82,16 @@ export const PaperDownload = styled.div`
   @media screen and (max-width: 1570px) {
     place-items:center;
   }
+
+  @media screen and (max-width: 1390px) {
+    margin-top: 2rem;
+  }
 `
 
 export const Blurb = styled.div`
   color: ${shade};
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1.51em;
   padding-top: 1rem;
   font-family: 'Rubik', sans-serif;
 

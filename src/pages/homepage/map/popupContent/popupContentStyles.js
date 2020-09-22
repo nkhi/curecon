@@ -47,6 +47,15 @@ export const SectionRow = styled(Section)`
   margin: 0.5rem 0;
 `
 
+export const SplitSectionRow = styled(SectionRow)`
+  flex-flow: column;
+  place-items: normal;
+
+  & > .long {
+    margin-top: 0.5rem;
+  }
+`
+
 export const LeaveIcon = styled(TransitEnterexitIcon)`
   font-size: 16px !important;
   margin-left: 2px;
@@ -61,7 +70,8 @@ export const DataLabel = styled.div`
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   margin-right: 4px;
-  width: ${ ({width}) => width ? `${width}px` : ''};
+  width: max-content;
+  /* width: ${ ({width}) => width ? `${width}px` : ''}; */
 `
 
 export const RowContent = styled.div`

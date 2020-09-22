@@ -187,7 +187,7 @@ const SchoolsList = ({}) => {
   ]
 
   const OceanicSubregions = [
-      { name: "Australasia", 
+      { name: "Australia", 
         schools: [{emoji: "🇦🇺", name: "University of Melbourne", shortcode: "umelbourne"},
                   {emoji: "🇦🇺", name: "University of Sydney", shortcode: "usydney"},
                   {emoji: "🇦🇺", name: "Bond University",shortcode: "ubond"},

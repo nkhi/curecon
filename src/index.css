@@ -13,11 +13,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Druk-Medium-Web';
-  src: local('Druk-Medium-Web'), url(./fonts/Druk-Medium-Web.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'Helvetica-Bold';
   src: local('Helvetica-Bold'), url(./fonts/Helvetica-Bold-Font.ttf) format('truetype');
 }

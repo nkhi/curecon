@@ -13,6 +13,7 @@ import {
   DataLabel,
   RowContent,
   SectionRow,
+  SplitSectionRow,
   SeeMoreButton
 } from './popupContentStyles'
 
@@ -45,42 +46,42 @@ const PopupContent = (activeSchool) => {
         <DataLabel>Gradutation: </DataLabel>
         <RowContent>{a?.GRADUATION}</RowContent>
       </SectionRow>}
-      { a?.INFO_POLICIES !== '' && <SectionRow>
+      { a?.INFO_POLICIES !== '' && <SplitSectionRow>
         <DataLabel>Changes to Academic Policy: </DataLabel>
-        <RowContent>{a?.INFO_POLICIES}</RowContent>
-      </SectionRow>}
-      { a?.OTHER_ACAD_CONSIDERATIONS !== '' && <SectionRow>
+        <RowContent className='long'>{a?.INFO_POLICIES}</RowContent>
+      </SplitSectionRow>}
+      { a?.OTHER_ACAD_CONSIDERATIONS !== '' && <SplitSectionRow>
         <DataLabel>Other Academic Considerations: </DataLabel>
-        <RowContent>{a?.OTHER_ACAD_CONSIDERATIONS}</RowContent>
-      </SectionRow>}
-      { a?.NEXT_SEM_PLAN !== '' && <SectionRow>
+        <RowContent className='long'>{a?.OTHER_ACAD_CONSIDERATIONS}</RowContent>
+      </SplitSectionRow>}
+      { a?.NEXT_SEM_PLAN !== '' && <SplitSectionRow>
         <DataLabel>Planned Action for Fall 2020 Semester: </DataLabel>
-        <RowContent>{a?.NEXT_SEM_PLAN}</RowContent>
-      </SectionRow>}
+        <RowContent className='long'>{a?.NEXT_SEM_PLAN}</RowContent>
+      </SplitSectionRow>}
       { a?.COURSES_MOVED_ONLINE !== '' && <SectionRow>
         <DataLabel>Courses Moved Online? </DataLabel>
-        <RowContent>{a?.COURSES_MOVED_ONLINE}</RowContent>
+        <RowContent className='long'>{a?.COURSES_MOVED_ONLINE}</RowContent>
       </SectionRow>}
       { a?.RESIDENCE !== '' && <SectionRow>
         <DataLabel>University has Residence Buildings: </DataLabel>
-        <RowContent>{a?.RESIDENCE}</RowContent>
+        <RowContent className='long'>{a?.RESIDENCE}</RowContent>
       </SectionRow>}
       { a?.RES_CLOSED !== '' && <SectionRow>
         <DataLabel>Residence Buildings Closed?</DataLabel>
-        <RowContent>{a?.RES_CLOSED}</RowContent>
+        <RowContent className='long'>{a?.RES_CLOSED}</RowContent>
       </SectionRow>}
       { a?.DATE_RES_CLOSED !== '' && <SectionRow>
         <DataLabel>Date Residence Buildings Closed: </DataLabel>
-        <RowContent>{a?.DATE_RES_CLOSED}</RowContent>
+        <RowContent className='long'>{a?.DATE_RES_CLOSED}</RowContent>
       </SectionRow>}
-      { a?.MENTAL_HEALTH_RESOURCES !== '' && <SectionRow>
+      { a?.MENTAL_HEALTH_RESOURCES !== '' && <SplitSectionRow>
         <DataLabel>Student Mental Health Resources available?</DataLabel>
-        <RowContent>{a?.MENTAL_HEALTH_RESOURCES}</RowContent>
-      </SectionRow>}
-      { a?.DETAILS_MENTAL_HEALTH_RESOURCES !== '' && <SectionRow>
+        <RowContent className='long'>{a?.MENTAL_HEALTH_RESOURCES}</RowContent>
+      </SplitSectionRow>}
+      { a?.DETAILS_MENTAL_HEALTH_RESOURCES !== '' && <SplitSectionRow>
         <DataLabel>Detailed Mental Health Resource Allowances:</DataLabel>
-        <RowContent>{a?.DETAILS_MENTAL_HEALTH_RESOURCES}</RowContent>
-      </SectionRow>}
+        <RowContent className='long'>{a?.DETAILS_MENTAL_HEALTH_RESOURCES}</RowContent>
+      </SplitSectionRow>}
       { a?.FIN_AID_OFFERED !== '' && <SectionRow>
         <DataLabel>Financial Aid Offered?</DataLabel>
         <RowContent>{a?.FIN_AID_OFFERED}</RowContent>
