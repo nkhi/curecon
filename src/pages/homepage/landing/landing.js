@@ -21,7 +21,7 @@ const Landing = ({}) => (
 
     <CallToAction>
       <TextSection>      
-        How did your school respond to the COVID-19 pandemic?
+        How did your university respond to the COVID-19 pandemic?
       </TextSection>
     </CallToAction>
 

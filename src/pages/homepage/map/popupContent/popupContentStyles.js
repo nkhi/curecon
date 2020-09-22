@@ -31,6 +31,7 @@ export const NameLabel = styled.h2`
   line-height: 1.4;
   color: #000;
   margin: 0.5rem 0;
+  font-size: 1.3rem;
 `
 
 export const Link = styled.a`
@@ -60,6 +61,7 @@ export const DataLabel = styled.div`
   padding: 0.25rem 0.5rem;
   font-weight: 700;
   margin-right: 4px;
+  width: ${ ({width}) => width ? `${width}px` : ''};
 `
 
 export const RowContent = styled.div`

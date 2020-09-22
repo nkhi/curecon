@@ -7,7 +7,7 @@ export const NavigationContainer = styled.div`
   position: sticky;
   flex-flow: row;
   justify-content: space-between;
-  min-height: 15vh;
+  min-height: 13vh;
   background-color: ${headerGray};
 `
 export const TitleSection = styled.div`
@@ -29,11 +29,11 @@ export const ButtonsContainer = styled.div`
 
 export const CureconText = styled.a`
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: 'Space Mono', monospace;
   font-style: normal;
   text-align: left;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-decoration: none;
   color: ${mainWhite};
 
@@ -46,7 +46,7 @@ export const NavButton = styled.a`
   margin-left: 2rem;
   color: ${mainWhite};
   text-decoration: none;
-  font-family: 'Helvetica-Bold';
+  font-family: 'Rubik';
   /* font-size: 0.8em; */
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -59,7 +59,7 @@ export const NavButton = styled.a`
 `
 
 export const EmojiImage = styled.img`
-  max-width: 5rem;
+  max-width: 4rem;
   margin-right: 1rem;
 
   &:hover{

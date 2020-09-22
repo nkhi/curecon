@@ -48,10 +48,10 @@ export const CureconTextSection = styled.div`
 export const Links = styled.div`
   grid-area: Links;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 0.75fr 0.75fr 0.75fr 0.75fr 1fr;
+  grid-template-columns: 1fr 150px 225px;
+  grid-template-rows: 1fr 0.7fr 0.7fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: ". ." ". WorldMap" ". School" ". Submit" " . About" ". ." ;
+  grid-template-areas: ". . ." ". WorldMap School" ". Submit About" ". . ." ;
   padding: 4rem 0;
 
   /* @media screen and (max-width: 909px) {
@@ -65,22 +65,26 @@ export const Links = styled.div`
 
 export const WorldMapLinkArea = styled.div`
   grid-area: WorldMap;
-  text-align: left;
+  display: flex;
+  place-items: center;
 `
 
 export const SchoolLinkArea = styled.div`
   grid-area: School;
-  text-align: left;
+  display: flex;
+  place-items: center;
 `
 
 export const AboutLinkArea = styled.div`
   grid-area: About;
-  text-align: left;
+  display: flex;
+  place-items: center;
 `
 
 export const SubmitLinkArea = styled.div`
   grid-area: Submit;
-  text-align: left;
+  display: flex;
+  place-items: center;
 `
 
 export const Disclaimer = styled.div`
@@ -127,4 +131,5 @@ export const NavLink = styled(Link)`
   text-transform: uppercase;
   word-spacing: 2px;
   text-decoration: none;
+  font-family: 'Rubik';
 `
