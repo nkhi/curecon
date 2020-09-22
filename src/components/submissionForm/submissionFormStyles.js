@@ -105,14 +105,15 @@ export const TextDisclaimer = styled.div`
 export const Input = styled.input`
   width: 100%;
   background-color: #de9204;
-  /* color: white;
-  font-family: 'Helvetica-Bold'; */
-  /* border: 1px solid #c6332c; */
   border: none;
   border-radius: 10px;
   height: 4rem;
   padding-left: 1rem;
   max-width: 472px;
+  
+  &::placeholder{
+    color: ${offShade};
+  }
 `
 
 export const ContinueButton = styled.button`

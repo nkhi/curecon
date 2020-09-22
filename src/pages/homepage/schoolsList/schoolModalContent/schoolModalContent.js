@@ -1,7 +1,7 @@
 import React from 'react';
 
 // styles
-import { ListItem, UnorderedList, Link } from './controlledAccordionStyles'
+import { ListItem, UnorderedList, Link } from './schoolModalContentStyles'
 
 // For MUI Accordion 
 import { makeStyles } from '@material-ui/core/styles';
@@ -13,7 +13,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 // components
 import Emoji from '../../../../components/emoji'
-// import SchoolModalContent from '../schoolModalContent'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,16 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ControlledAccordion = ({subregions}) => {
+const SchoolModalContent = ({subregions}) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
-  };
-
-  const handleModal = (shortcode) => {
-    // something about a modal give it shortcode
   };
 
   return (
@@ -52,7 +47,6 @@ const ControlledAccordion = ({subregions}) => {
           <AccordionDetails>
             <UnorderedList>
             {subregion.schools.sort().map((schoolObject) => {
-              {/* <ListItem onClick={() => handleModal(schoolObject.shortcode)}> */}
               return(
                 <ListItem>
                   <Emoji symbol={schoolObject.emoji} />
@@ -68,4 +62,4 @@ const ControlledAccordion = ({subregions}) => {
   );
 }
 
-export default ControlledAccordion
+export default SchoolModalContent
