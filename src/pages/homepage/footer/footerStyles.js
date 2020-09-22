@@ -133,3 +133,34 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-family: 'Rubik';
 `
+
+export const NavButton = styled.a`
+  margin-left: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 2px;
+  position: relative;
+
+  &:hover{
+    color: #ffdd2c;
+  }
+
+  &:after{
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    background: #ffdd2c;
+    transition: 0.25s;
+  }
+
+  &:hover:after{
+    width: 100%;
+  }
+`
