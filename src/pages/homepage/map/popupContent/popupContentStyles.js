@@ -6,6 +6,8 @@ import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
 
 export const Container = styled.div`
   line-height: 1em;
+  max-height: 425px;
+  overflow-y: auto;
 `
 
 export const LocationLabel = styled.div`
@@ -53,6 +55,9 @@ export const SplitSectionRow = styled(SectionRow)`
 
   & > .long {
     margin-top: 0.5rem;
+    max-width: 85%;
+    margin-left: 0.5rem;
+    line-height: 1.2;
   }
 `
 
@@ -67,15 +72,17 @@ export const DataLabel = styled.div`
   background: ${shade};
   color: white;
   border-radius: 5px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   font-weight: 700;
   margin-right: 4px;
   width: max-content;
+  font-size: 13px;
   /* width: ${ ({width}) => width ? `${width}px` : ''}; */
 `
 
 export const RowContent = styled.div`
   color: #000;
+  font-size: 13px;
 `
 
 export const SeeMoreButton = styled.div`

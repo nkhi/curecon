@@ -74,10 +74,10 @@ const PopupContent = (activeSchool) => {
         <DataLabel>Date Residence Buildings Closed: </DataLabel>
         <RowContent className='long'>{a?.DATE_RES_CLOSED}</RowContent>
       </SectionRow>}
-      { a?.MENTAL_HEALTH_RESOURCES !== '' && <SplitSectionRow>
+      { a?.MENTAL_HEALTH_RESOURCES !== '' && <SectionRow>
         <DataLabel>Student Mental Health Resources available?</DataLabel>
-        <RowContent className='long'>{a?.MENTAL_HEALTH_RESOURCES}</RowContent>
-      </SplitSectionRow>}
+        <RowContent>{a?.MENTAL_HEALTH_RESOURCES}</RowContent>
+      </SectionRow>}
       { a?.DETAILS_MENTAL_HEALTH_RESOURCES !== '' && <SplitSectionRow>
         <DataLabel>Detailed Mental Health Resource Allowances:</DataLabel>
         <RowContent className='long'>{a?.DETAILS_MENTAL_HEALTH_RESOURCES}</RowContent>
@@ -86,14 +86,14 @@ const PopupContent = (activeSchool) => {
         <DataLabel>Financial Aid Offered?</DataLabel>
         <RowContent>{a?.FIN_AID_OFFERED}</RowContent>
       </SectionRow>}
-      { a?.TYPES_FIN_AID_OFFERED !== '' && <SectionRow>
+      { a?.TYPES_FIN_AID_OFFERED !== '' && <SplitSectionRow>
         <DataLabel>Types of Financial Aid Offered:</DataLabel>
-        <RowContent>{a?.TYPES_FIN_AID_OFFERED}</RowContent>
-      </SectionRow>}
-      { a?.OTHER !== '' && <SectionRow>
+        <RowContent className='long'>{a?.TYPES_FIN_AID_OFFERED}</RowContent>
+      </SplitSectionRow>}
+      { a?.OTHER !== '' && <SplitSectionRow>
         <DataLabel>Other Information: </DataLabel>
-        <RowContent>{a?.OTHER}</RowContent>
-      </SectionRow>}
+        <RowContent className='long'>{a?.OTHER}</RowContent>
+      </SplitSectionRow>}
     </Container>
   )
 }
