@@ -14,11 +14,17 @@ import {
   RowContent,
   SectionRow,
   SplitSectionRow,
-  SeeMoreButton
+  SeeMoreButton,
+  Pass,
+  Fail
 } from './popupContentStyles'
 
 const PopupContent = (activeSchool) => {
   const a = activeSchool.activeSchool
+  const booleanIcon = (attribute) => {return(
+    attribute === 'Yes' ? <Pass style={{fontSize: 20}}/> 
+                    : attribute === 'No' && <Fail style={{fontSize: 20}}/>)
+  }
   
   return(
     <Container>
@@ -60,15 +66,24 @@ const PopupContent = (activeSchool) => {
       </SplitSectionRow>}
       { a?.COURSES_MOVED_ONLINE !== '' && <SectionRow>
         <DataLabel>Courses Moved Online? </DataLabel>
-        <RowContent className='long'>{a?.COURSES_MOVED_ONLINE}</RowContent>
+        <RowContent className='long'>
+          {booleanIcon(a?.COURSES_MOVED_ONLINE)}
+          {a?.COURSES_MOVED_ONLINE}
+        </RowContent>
       </SectionRow>}
       { a?.RESIDENCE !== '' && <SectionRow>
-        <DataLabel>University has Residence Buildings: </DataLabel>
-        <RowContent className='long'>{a?.RESIDENCE}</RowContent>
+        <DataLabel>University has Residence Buildings? </DataLabel>
+        <RowContent className='long'>{}
+          {booleanIcon(a?.RESIDENCE)}
+          {a?.RESIDENCE}
+        </RowContent>
       </SectionRow>}
       { a?.RES_CLOSED !== '' && <SectionRow>
         <DataLabel>Residence Buildings Closed?</DataLabel>
-        <RowContent className='long'>{a?.RES_CLOSED}</RowContent>
+        <RowContent className='long'>
+          {booleanIcon(a?.RES_CLOSED)}
+          {a?.RES_CLOSED}
+        </RowContent>
       </SectionRow>}
       { a?.DATE_RES_CLOSED !== '' && <SectionRow>
         <DataLabel>Date Residence Buildings Closed: </DataLabel>
@@ -76,7 +91,9 @@ const PopupContent = (activeSchool) => {
       </SectionRow>}
       { a?.MENTAL_HEALTH_RESOURCES !== '' && <SectionRow>
         <DataLabel>Student Mental Health Resources available?</DataLabel>
-        <RowContent>{a?.MENTAL_HEALTH_RESOURCES}</RowContent>
+        <RowContent>
+          {booleanIcon(a?.MENTAL_HEALTH_RESOURCES)}
+          {a?.MENTAL_HEALTH_RESOURCES}</RowContent>
       </SectionRow>}
       { a?.DETAILS_MENTAL_HEALTH_RESOURCES !== '' && <SplitSectionRow>
         <DataLabel>Detailed Mental Health Resource Allowances:</DataLabel>
@@ -84,7 +101,10 @@ const PopupContent = (activeSchool) => {
       </SplitSectionRow>}
       { a?.FIN_AID_OFFERED !== '' && <SectionRow>
         <DataLabel>Financial Aid Offered?</DataLabel>
-        <RowContent>{a?.FIN_AID_OFFERED}</RowContent>
+        <RowContent>
+          {booleanIcon(a?.FIN_AID_OFFERED)}
+          {a?.FIN_AID_OFFERED}
+        </RowContent>
       </SectionRow>}
       { a?.TYPES_FIN_AID_OFFERED !== '' && <SplitSectionRow>
         <DataLabel>Types of Financial Aid Offered:</DataLabel>

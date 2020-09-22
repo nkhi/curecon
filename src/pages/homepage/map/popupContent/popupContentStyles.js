@@ -3,6 +3,9 @@ import {shade, mainGreen} from '../../../../colorPalette'
 
 import ExploreIcon from '@material-ui/icons/Explore';
 import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import CancelIcon from '@material-ui/icons/Cancel';
+
 
 export const Container = styled.div`
   line-height: 1em;
@@ -83,6 +86,9 @@ export const DataLabel = styled.div`
 export const RowContent = styled.div`
   color: #000;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 
 export const SeeMoreButton = styled.div`
@@ -90,4 +96,12 @@ export const SeeMoreButton = styled.div`
   padding: 0.25rem 0.5rem;
   border-radius: 5px; 
   font-size: 1.5em;
+`
+
+export const Pass = styled(CheckCircleIcon)`
+  color: green;
+`
+
+export const Fail = styled(CancelIcon)` 
+  color: red;
 `
