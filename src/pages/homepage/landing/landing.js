@@ -39,7 +39,6 @@ const Landing = ({}) => (
         <a href='/map'>
           <ReadPaperButton>
             <ButtonContent>
-              {/* <Emoji margin label="Location Pin" /> */}
               <Map src={require('./assets/map2.png')} alt='Map with Location Pin'/>
               Explore the Map           
             </ButtonContent> 

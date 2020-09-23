@@ -24,6 +24,7 @@ export const ReadPaperButton = styled.button`
 export const ButtonContent = styled.div`
   display: flex;
   align-items: center;
+  font-family: 'Helvetica-Bold';
 `
 
 export const ExploreMapButton = styled(ReadPaperButton)`
