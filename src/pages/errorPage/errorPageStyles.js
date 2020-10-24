@@ -29,13 +29,24 @@ export const Layout = styled.div`
 export const Center = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px;
     gap: 0px 0px;
     grid-template-areas:
     "Image Image Image"
     "Image Image Image"
-    "Subtitle Subtitle Subtitle";
+    "Subtitle Subtitle Subtitle"
+    "Contact Contact Contact";
     min-height: 100vh;
+`
+
+export const Contact = styled.div`
+    grid-area: Contact;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-family: monospace;
+    color: #f6f6f6;
+    font-size: 0.9rem;
 `
 
 export const Image = styled.div`
@@ -108,4 +119,10 @@ export const BlandLink = styled.a`
   &:hover{
     text-decoration: underline;
   }
+`
+
+export const EmailLink = styled.a`
+  text-decoration: none;
+  color: white;
+  padding-left: 0.5rem;
 `

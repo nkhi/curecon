@@ -6,7 +6,9 @@ import {
     Subtitle,
     HomeButton,
     SubContent,
-    BlandLink
+    BlandLink,
+    Contact,
+    EmailLink
 } from './errorPageStyles'
 
 const About = () => (
@@ -23,6 +25,10 @@ const About = () => (
                     </BlandLink>
                 </SubContent>
             </Subtitle>
+            <Contact>
+                Wanna chat? 
+                <EmailLink href="mailto:hey@curecon.org?subject=Support%20Request%3A ">hey@curecon.org</EmailLink>
+            </Contact>
         </Center>
     </Layout>
 )
