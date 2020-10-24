@@ -7,22 +7,25 @@ import SchoolInfo from './pages/schoolInfo'
 import Submission from './pages/submission'
 import About from './pages/about'
 
+// 404 Page
+import ErrorPage from './pages/errorPage'
+
 // Top-level url routing
 const App = () => (
   <Router>
     <Switch>
-      <Route path='/school/:schoolCode?'>
-        <SchoolInfo />
+      <Route path='/school/'>
+        <ErrorPage />
       </Route>
     </Switch>
     <Switch>
       <Route path='/submit'>
-        <Submission />
+        <ErrorPage />
       </Route>
     </Switch>
     <Switch>
       <Route path='/about'>
-        <About />
+        <ErrorPage />
       </Route>
     </Switch>
     <Switch>
