@@ -101,7 +101,7 @@ const MapContainer = ({}) => {
   
   return(
     <Layout>
-      <OuterSearchContainer>
+      {/* <OuterSearchContainer>
         <InnerSearchContainer>
           <Autosuggest 
             suggestions={suggestions}
@@ -111,7 +111,7 @@ const MapContainer = ({}) => {
             renderSuggestion={renderSuggestion}
             inputProps={inputProps} />
         </InnerSearchContainer>
-      </OuterSearchContainer>
+      </OuterSearchContainer> */}
       <Map center={[4.36139, 18.55528]} zoom={3}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

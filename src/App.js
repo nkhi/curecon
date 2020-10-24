@@ -19,6 +19,11 @@ const App = () => (
       </Route>
     </Switch>
     <Switch>
+      <Route path='/map/'>
+        <ErrorPage />
+      </Route>
+    </Switch>
+    <Switch>
       <Route path='/submit'>
         <ErrorPage />
       </Route>
