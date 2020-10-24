@@ -2,19 +2,6 @@ import styled from 'styled-components';
 import {shade, mainYellow} from '../../colorPalette'
 
 export const Layout = styled.div`
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    // gap: 0px 0px;
-    // grid-template-areas:
-    // ". . . . . ."
-    // "Center Center Center Center Center Center"
-    // "Center Center Center Center Center Center"
-    // "Center Center Center Center Center Center"
-    // ". . . . . .";
-    // min-height: 100vh;
-    // background: rgb(246,246,246);
-    // background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(246,246,246,1) 100%);
     background: linear-gradient(233deg, #0054ff, #532bf3, #ae0ed2, #c30000);
     background-size: 800% 800%;
 
@@ -48,7 +35,6 @@ export const Center = styled.div`
     "Image Image Image"
     "Image Image Image"
     "Subtitle Subtitle Subtitle";
-    // grid-area: Center;   
     min-height: 100vh;
 `
 
@@ -78,9 +64,6 @@ export const Image = styled.div`
         font-size: 12rem;
         letter-spacing: -1.5rem;
     }
-    // background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    // height: 400px;
-    // background-position: center;
 `
 export const Subtitle = styled.div`
     grid-area: Subtitle;
