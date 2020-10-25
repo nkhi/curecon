@@ -133,6 +133,7 @@ export const NavLink = styled(Link)`
   word-spacing: 2px;
   text-decoration: none;
   font-family: 'Rubik';
+  
   color: white;
 
   &:hover{
