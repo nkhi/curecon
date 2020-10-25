@@ -14,11 +14,14 @@ import ErrorPage from './pages/errorPage'
 const App = () => (
   <Router>
     <Switch>
-      <Route path='/school/'>
-        <ErrorPage />
+      <Route exact path='/'>
+        <Homepage />
       </Route>
     </Switch>
     <Switch>
+      <Route component={ErrorPage} />
+    </Switch>
+    {/* <Switch>
       <Route path='/map/'>
         <ErrorPage />
       </Route>
@@ -32,12 +35,8 @@ const App = () => (
       <Route path='/about'>
         <ErrorPage />
       </Route>
-    </Switch>
-    <Switch>
-      <Route exact path='/'>
-        <Homepage />
-      </Route>
-    </Switch>
+    </Switch> */}
+
   </Router>
 )
 

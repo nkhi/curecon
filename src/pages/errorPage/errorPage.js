@@ -27,7 +27,7 @@ const About = () => (
             </Subtitle>
             <Contact>
                 Wanna chat? 
-                <EmailLink href="mailto:hey@curecon.org?subject=Support%20Request%3A ">hey@curecon.org</EmailLink>
+                <EmailLink href="mailto:hey@curecon.org?subject=Support%20Request%3A">hey@curecon.org</EmailLink>
             </Contact>
         </Center>
     </Layout>

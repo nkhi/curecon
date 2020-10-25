@@ -60,7 +60,7 @@ export const Image = styled.div`
     letter-spacing: -2rem;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 1rem;
+    padding: 0 0.25rem 1rem 0;
 
     @media screen and (max-width: 650px) {
         font-size: 20rem;
@@ -125,4 +125,8 @@ export const EmailLink = styled.a`
   text-decoration: none;
   color: white;
   padding-left: 0.5rem;
+
+  &:hover{
+    color: ${mainYellow}
+  }
 `
