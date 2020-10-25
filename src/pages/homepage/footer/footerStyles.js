@@ -155,7 +155,7 @@ export const Hyperlink = styled.a`
   color: white;
   text-decoration: none;
   padding: 0.25rem 0;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Syne', monospace;
 
   &:hover{

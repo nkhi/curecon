@@ -10,6 +10,7 @@ export const NavigationContainer = styled.div`
   justify-content: space-between;
   min-height: 13vh;
   background-color: ${headerGray};
+  max-width: 100vw;
 `
 export const TitleSection = styled.div`
   display: flex;

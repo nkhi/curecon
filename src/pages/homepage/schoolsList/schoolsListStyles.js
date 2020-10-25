@@ -32,6 +32,8 @@ export const GridContainer = styled.div`
   background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%); */
   background: #89c8db;
   min-height: 30vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
   grid-template-rows: 1fr;
@@ -115,9 +117,10 @@ export const SearchPart = styled.div`
 
 export const Title = styled.div`
   font-size: 1.15em;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   color: rgba(0, 0, 0, 0.87);
+  font-family: 'Syne';
 `
 
 export const TitlePill = styled.div`

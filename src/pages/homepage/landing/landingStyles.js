@@ -63,6 +63,9 @@ export const GridContainer = styled.div`
                       "CallToAction CallToAction CallToAction CallToAction" 
                       ". PaperDownload SubmissionSpace ."
                       ". . . .";
+  
+  max-width: 100vw;
+  overflow-x: hidden;
 
   @media screen and (max-width: 1570px) {
     grid-template-columns: 2rem 1fr 620px 1fr 2rem;
