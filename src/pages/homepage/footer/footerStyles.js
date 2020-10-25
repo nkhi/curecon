@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
-import { teal, headerGray } from '../../../colorPalette'
+import { teal, headerGray, offShade } from '../../../colorPalette'
 
 export const Layout = styled.div`
   background-color: ${headerGray};
@@ -26,19 +26,53 @@ export const LinksSection = styled.div`
 `
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.15fr 0.15fr 1fr 1.15fr 0.15fr;
-  grid-template-rows: 0.25fr 1fr 1fr 1fr 0.5fr;
-  gap: 1px 1px;
-  grid-template-areas: ". . . . ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Emoji CureconText Links ." ". Disclaimer Disclaimer Disclaimer .";
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . ."
+    ". Map School Submit About ."
+    ". Message Message Message Message ."
+    ". . . . . .";
   background: rgb(32,32,32);
   min-height: 35vh;
 
-  /* @media screen and (max-width: 909px) {
-    grid-template-columns: 0.05fr 0.15fr 1fr 0.05fr;
-    grid-template-rows: 0.05fr 0.25fr 0.25fr 6rem 0.05fr 0.5fr;
-    gap: 1px 1px;
-    grid-template-areas: ". . . ." ". Emoji CureconText ." ". Emoji CureconText ." ". Links Links ." ". . . ." ". Disclaimer Disclaimer .";
-  } */
+  @media screen and (max-width: 915px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    " . . . . "
+    " Map School Submit About"
+    " Message Message Message Message"
+    " . . . . ";
+  }
+
+  @media screen and (max-width: 750px) {
+    min-height: 40vh;
+    grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    " . . . . "
+    " . Map School . "
+    " . Submit About ."
+    " Message Message Message Message"
+    " . . . . ";
+  }
+
+  @media screen and (max-width: 570px) {
+    min-height: 45vh;
+    grid-template-columns: 0.15fr 1fr 0.15fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    " . . . "
+    " . Map . "
+    " . School ."
+    " . Submit ."
+    " . About ."
+    " Message Message Message"
+    " . . . ";
+  }
+
 `
 export const CureconTextSection = styled.div`
   grid-area: CureconText;
@@ -46,53 +80,53 @@ export const CureconTextSection = styled.div`
   place-items: center;
 `
 
-export const Links = styled.div`
-  grid-area: Links;
-  display: grid;
-  grid-template-columns: 1fr 150px 225px;
-  grid-template-rows: 1fr 0.7fr 0.7fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: ". . ." ". WorldMap School" ". Submit About" ". . ." ;
-  padding: 4rem 0;
-
-  /* @media screen and (max-width: 909px) {
-    padding: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 12px 12px;
-    grid-template-areas: "WorldMap School Submit About";
-  } */
-`
-
-export const WorldMapLinkArea = styled.div`
-  grid-area: WorldMap;
+export const Map = styled.div`
+  grid-area: Map;
   display: flex;
   place-items: center;
+  justify-content: center;
 `
 
-export const SchoolLinkArea = styled.div`
+export const School = styled.div`
   grid-area: School;
   display: flex;
   place-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
 `
 
-export const AboutLinkArea = styled.div`
+export const About = styled.div`
   grid-area: About;
   display: flex;
   place-items: center;
+  justify-content: center;
 `
 
-export const SubmitLinkArea = styled.div`
+export const Submit = styled.div`
   grid-area: Submit;
   display: flex;
   place-items: center;
+  justify-content: center;
 `
 
-export const Disclaimer = styled.div`
-  grid-area: Disclaimer;
+export const Message = styled.div`
+  grid-area: Message;
   color: white;
   font-family: 'Source Sans Pro';
-  text-align: left;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  border-top: 1px solid ${offShade};
+
+  @media screen and (max-width: 915px) {
+    border: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 0 1.5rem;
+  }
 `
 
 export const EmojiSection = styled.div`
@@ -119,6 +153,10 @@ export const EmojiImage = styled.img`
 
 export const Hyperlink = styled.a`
   color: white;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  font-weight: 600;
+  font-family: 'Syne', monospace;
 
   &:hover{
     color: #ffdd2c;
@@ -127,7 +165,7 @@ export const Hyperlink = styled.a`
 
 export const NavLink = styled(Link)`
   font-weight: 700;
-  font-size: 0.95em;
+  font-size: 0.9em;
   letter-spacing: 1px;
   text-transform: uppercase;
   word-spacing: 2px;
