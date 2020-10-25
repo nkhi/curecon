@@ -13,13 +13,13 @@ const App = () => (
   <Router>
     <Switch>
       <Route path='/' exact component={Homepage}/>
-      <Route path='/schools/' exact component={ErrorPage}/>
-      <Route path='/school/' exact component={ErrorPage}/>
-      <Route path='/about/' exact component={ErrorPage}/>
-      <Route path='/submit/' exact component={ErrorPage}/>
-      <Route path='/map/' exact component={ErrorPage}/>
       <Route component={ErrorPage}/>
     </Switch>
+    {/* <Switch><Route path='/schools' exact component={ErrorPage}/></Switch>
+    <Switch><Route path='/school' exact component={ErrorPage}/></Switch>
+    <Switch><Route path='/about' exact component={ErrorPage}/></Switch>
+    <Switch><Route path='/submit' exact component={ErrorPage}/></Switch>
+    <Switch><Route path='/map' exact component={ErrorPage}/></Switch> */}
   </Router>
 )
 

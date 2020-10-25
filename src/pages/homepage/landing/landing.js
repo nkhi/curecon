@@ -15,7 +15,8 @@ import {
       Blurb,
     SubmissionSpace,
     ButtonContent,
-    Map
+    Map,
+    RLink
 } from './landingStyles'
 
 const Landing = ({}) => (
@@ -36,14 +37,14 @@ const Landing = ({}) => (
         Your responses will aid in understanding how univeristy policy influences student wellbeing, campus life, and public health outcomes. 
         <br/><br/>
         
-        <a href='/map'>
+        <RLink to='/map'>
           <ReadPaperButton>
             <ButtonContent>
               <Map src={require('./assets/map2.png')} alt='Map with Location Pin'/>
               Explore the Map           
             </ButtonContent> 
           </ReadPaperButton>
-        </a>
+        </RLink>
 
       </Blurb>
     </PaperDownload>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { teal, headerGray } from '../../../colorPalette'
 
 export const Layout = styled.div`
@@ -116,7 +117,7 @@ export const EmojiImage = styled.img`
   }
 `
 
-export const Link = styled.a`
+export const Hyperlink = styled.a`
   color: white;
 
   &:hover{
@@ -132,6 +133,11 @@ export const NavLink = styled(Link)`
   word-spacing: 2px;
   text-decoration: none;
   font-family: 'Rubik';
+  color: white;
+
+  &:hover{
+    color: #ffdd2c;
+  }
 `
 
 export const NavButton = styled.a`

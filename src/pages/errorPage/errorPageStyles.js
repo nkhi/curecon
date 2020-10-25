@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import {shade, mainYellow} from '../../colorPalette'
 
 export const Layout = styled.div`
@@ -112,7 +113,7 @@ export const HomeButton = styled.button`
   }
 `
 
-export const BlandLink = styled.a`
+export const BlandLink = styled(Link)`
   text-decoration: none;
   color: ${shade};
 

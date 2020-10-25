@@ -15,7 +15,7 @@ import {
    Disclaimer,
    EmojiSection,
    EmojiImage,
-   Link,
+   Hyperlink,
    NavLink,
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
@@ -27,31 +27,31 @@ const Footer = () => {
         <EmojiImage src={require('./assets/mask.png')}/>
       </EmojiSection>
       <CureconTextSection>
-        <CureconText id="swap">
+        <CureconText>
           COVID-19 University <br/>Response Consolidation
         </CureconText>
       </CureconTextSection>
       <Links>
         <WorldMapLinkArea>
-          <NavLink href='/map'>
+          <NavLink to='/map'>
             <Emoji margin symbol="📍" label="Location Pin"/> 
             World Map
           </NavLink>
         </WorldMapLinkArea>
         <SchoolLinkArea>
-          <NavLink href='/schools'>
+          <NavLink to='/schools'>
             <Emoji margin symbol="🏫" label="School Building"/> 
             Find your school
           </NavLink>
         </SchoolLinkArea>
         <SubmitLinkArea>
-          <NavLink href='/submit'>
+          <NavLink to='/submit'>
             <Emoji margin symbol="🎙" label="Microphone"/>
             Submit
           </NavLink>
         </SubmitLinkArea>
         <AboutLinkArea>
-          <NavLink href='/about'>
+          <NavLink to='/about'>
             <Emoji margin symbol="🤓" label="Nerd"/> 
             About
           </NavLink>
@@ -59,7 +59,7 @@ const Footer = () => {
       </Links>
       <Disclaimer>
         DISCLAIMER: This project was funded by 
-        <Link href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> a University of Toronto research grant</Link>.  
+        <Hyperlink href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> a University of Toronto research grant</Hyperlink>.  
       </Disclaimer>
     </GridContainer>
   )

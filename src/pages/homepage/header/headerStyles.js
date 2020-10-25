@@ -1,5 +1,6 @@
 // components
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { headerGray, mainWhite, jadeGreen } from '../../../colorPalette'
 
 export const NavigationContainer = styled.div`
@@ -27,7 +28,7 @@ export const ButtonsContainer = styled.div`
   } */
 `
 
-export const CureconText = styled.a`
+export const CureconText = styled(Link)`
   font-weight: 700;
   font-size: 1.25em;
   font-family: 'Space Mono', monospace;
@@ -42,7 +43,7 @@ export const CureconText = styled.a`
   }
 `
 
-export const NavButton = styled.a`
+export const NavButton = styled(Link)`
   margin-left: 2rem;
   color: #fff;
   text-decoration: none;

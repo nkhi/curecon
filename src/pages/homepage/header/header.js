@@ -41,19 +41,19 @@ const Header = () => {
       </MobileMenu>
 
       <ButtonsContainer>
-        <NavButton href="/map">
+        <NavButton to="/map">
           {/* <Emoji margin symbol="📍" label="Location Pin"/>  */}
           World Map
         </NavButton>
-        <NavButton href="/schools">
+        <NavButton to="/schools">
           {/* <Emoji margin symbol="🏫" label="School Building"/>  */}
           Find your school
         </NavButton>
-        <NavButton href="/submit">
+        <NavButton to="/submit">
           {/* <Emoji margin symbol="🎙" label="Microphone"/>  */}
           Submit
         </NavButton>
-        <NavButton href="/about">
+        <NavButton to="/about">
           {/* <Emoji margin symbol="🤓" label="Nerd"/> */}
           About
         </NavButton>

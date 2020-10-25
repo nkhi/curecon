@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { mainYellow, shade} from '../../../colorPalette'
 
 export const ReadPaperButton = styled.button`
@@ -127,16 +128,20 @@ export const Underline = styled.span`
   
 `
 
-export const Link = styled.a`
-  text-decoration: none;
+// export const Link = styled.a`
+//   text-decoration: none;
 
-  @media screen and (max-width: 1570px) {
-    padding-bottom: 2rem;
-  }
-`
+//   @media screen and (max-width: 1570px) {
+//     padding-bottom: 2rem;
+//   }
+// `
 
 export const Map = styled.img`
   width: 25px;
   height: 25px;
   margin-right: 6px;
+`
+
+export const RLink = styled(Link)`
+  text-decoration: none;
 `

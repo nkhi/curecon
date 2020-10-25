@@ -18,7 +18,7 @@ const ErrorPage = () => (
             <Subtitle>
                 <SubContent>
                     Sorry! This page is currently unavailable.
-                    <BlandLink href="/">
+                    <BlandLink to="/">
                         <HomeButton>
                             Go Home
                         </HomeButton>  

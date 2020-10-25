@@ -22,7 +22,8 @@ Disclaimer,
 Face,
 IconSpace,
 TextDisclaimer,
-Link, BlandLink
+Hyperlink,
+BlandLink
 } from './submissionFormStyles'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -68,14 +69,14 @@ const SubmissionForm = ({}) => {
           <IconSpace><Face /></IconSpace>
           <TextDisclaimer>
           <DisclaimerText>
-            <Link href='/data-privacy'>Read our Data Privacy Statement</Link> 
+            <Hyperlink to='/data-privacy'>Read our Data Privacy Statement</Hyperlink> 
             <br/> TL;DR: it's completely anonymous. 
           </DisclaimerText>
           </TextDisclaimer>
         </Disclaimer>
 
         <Continue>
-          <BlandLink href='/submit'>
+          <BlandLink to='/submit'>
             <ContinueButton>
               Continue
               <NavigateNextIcon />
