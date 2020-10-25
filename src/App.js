@@ -13,6 +13,11 @@ const App = () => (
   <Router>
     <Switch>
       <Route path='/' exact component={Homepage}/>
+      <Route path='/schools/' exact component={ErrorPage}/>
+      <Route path='/school/' exact component={ErrorPage}/>
+      <Route path='/about/' exact component={ErrorPage}/>
+      <Route path='/submit/' exact component={ErrorPage}/>
+      <Route path='/map/' exact component={ErrorPage}/>
       <Route component={ErrorPage}/>
     </Switch>
   </Router>
