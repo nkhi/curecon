@@ -11,7 +11,7 @@ import {
     EmailLink
 } from './errorPageStyles'
 
-const About = () => (
+const ErrorPage = () => (
     <Layout class='css-selector'>
         <Center>
             <Image>404</Image>
@@ -20,7 +20,7 @@ const About = () => (
                     Sorry! This page is currently unavailable.
                     <BlandLink href="/">
                         <HomeButton>
-                            Go to Home
+                            Go Home
                         </HomeButton>  
                     </BlandLink>
                 </SubContent>
@@ -33,4 +33,4 @@ const About = () => (
     </Layout>
 )
 
-export default About
+export default ErrorPage
