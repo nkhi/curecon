@@ -8,8 +8,11 @@ import {
     SubContent,
     BlandLink,
     Contact,
-    EmailLink
+    EmailLink,
+    IconDiv,
+    IconDiv2
 } from './errorPageStyles'
+import { ArrowLeft, ChatsCircle } from 'phosphor-react'
 
 const ErrorPage = () => (
     <Layout class='css-selector'>
@@ -20,13 +23,15 @@ const ErrorPage = () => (
                     Sorry! This page is currently unavailable.
                     <BlandLink to="/">
                         <HomeButton>
-                            Go Home
+                            <IconDiv> <ArrowLeft size={20} weight='bold'/> </IconDiv>
+                            Go Back
                         </HomeButton>  
                     </BlandLink>
                 </SubContent>
             </Subtitle>
             <Contact>
-                Wanna chat? 
+                Need help?
+                <IconDiv2><ChatsCircle size={24} weight="duotone" /></IconDiv2>
                 <EmailLink href="mailto:hey@curecon.org?subject=Support%20Request%3A">hey@curecon.org</EmailLink>
             </Contact>
         </Center>

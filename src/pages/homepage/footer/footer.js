@@ -17,8 +17,10 @@ import {
   //  EmojiImage,
    Hyperlink,
    NavLink,
+   IconDiv
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
+import {MapPin, MagnifyingGlass, Megaphone, Question, } from 'phosphor-react'
 
 const Footer = () => {
   return(
@@ -52,25 +54,29 @@ const Footer = () => {
     <GridContainer>
       <Map>
         <NavLink to='/map'>
-          <Emoji margin symbol="📍" label="Location Pin"/> 
+          {/* <Emoji margin symbol="📍" label="Location Pin"/>  */}
+          <IconDiv><MapPin size={24} weight="duotone" /></IconDiv>
           World Map
         </NavLink>
       </Map>
       <School>
         <NavLink to='/schools'>
-          <Emoji margin symbol="🏫" label="School Building"/> 
+          {/* <Emoji margin symbol="🏫" label="School Building"/>  */}
+          <IconDiv><MagnifyingGlass size={24} weight="duotone" /></IconDiv>
           Find your school
         </NavLink>
       </School>
       <Submit>
         <NavLink to='/submit'>
-           <Emoji margin symbol="🎙" label="Microphone"/>
+           {/* <Emoji margin symbol="🎙" label="Microphone"/> */}
+           <IconDiv><Megaphone size={24} weight="duotone" /></IconDiv>
            Submit
         </NavLink>
       </Submit>
       <About>
         <NavLink to='/about'>
-          <Emoji margin symbol="🤓" label="Nerd"/> 
+          {/* <Emoji margin symbol="🤓" label="Nerd"/>  */}
+          <IconDiv><Question size={24} weight="duotone" /></IconDiv>
           About
         </NavLink>
       </About>

@@ -83,7 +83,7 @@ export const CureconTextSection = styled.div`
 export const Map = styled.div`
   grid-area: Map;
   display: flex;
-  place-items: center;
+  align-items: center;
   justify-content: center;
 `
 
@@ -171,7 +171,8 @@ export const NavLink = styled(Link)`
   word-spacing: 2px;
   text-decoration: none;
   font-family: 'Rubik';
-  
+  display: flex;
+  place-items: center;
   color: white;
 
   &:hover{
@@ -208,4 +209,8 @@ export const NavButton = styled.a`
   &:hover:after{
     width: 100%;
   }
+`
+
+export const IconDiv = styled.div`
+  margin-right: 8px;
 `

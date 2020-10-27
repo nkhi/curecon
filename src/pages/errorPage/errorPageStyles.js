@@ -47,7 +47,7 @@ export const Contact = styled.div`
     place-items: center;
     font-family: monospace;
     color: #f6f6f6;
-    font-size: 0.9rem;
+    font-size: 1.15em;
 `
 
 export const Image = styled.div`
@@ -62,6 +62,7 @@ export const Image = styled.div`
     display: flex;
     align-items: flex-end;
     padding: 0 0.25rem 1rem 0;
+    place-items: center;
 
     @media screen and (max-width: 650px) {
         font-size: 20rem;
@@ -104,6 +105,8 @@ export const HomeButton = styled.button`
   cursor: pointer;
   outline: none;
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
 
   &:hover{
     background-color: #2EE59D;
@@ -117,17 +120,25 @@ export const BlandLink = styled(Link)`
   text-decoration: none;
   color: ${shade};
 
-  &:hover{
-    text-decoration: underline;
-  }
+  // &:hover{
+  //   text-decoration: underline;
+  // }
 `
 
 export const EmailLink = styled.a`
   text-decoration: none;
   color: white;
-  padding-left: 0.5rem;
+  // padding-left: 0.5rem;
 
   &:hover{
     color: ${mainYellow}
   }
+`
+
+export const IconDiv = styled.div`
+  margin-right: 4px;
+`
+
+export const IconDiv2 = styled(IconDiv)`
+  margin-left: 4px;
 `
