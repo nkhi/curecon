@@ -1,5 +1,6 @@
 // components
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { headerGray, mainWhite, jadeGreen } from '../../../colorPalette'
 
 export const NavigationContainer = styled.div`
@@ -9,6 +10,7 @@ export const NavigationContainer = styled.div`
   justify-content: space-between;
   min-height: 13vh;
   background-color: ${headerGray};
+  max-width: 100vw;
 `
 export const TitleSection = styled.div`
   display: flex;
@@ -27,7 +29,7 @@ export const ButtonsContainer = styled.div`
   } */
 `
 
-export const CureconText = styled.a`
+export const CureconText = styled(Link)`
   font-weight: 700;
   font-size: 1.25em;
   font-family: 'Space Mono', monospace;
@@ -42,7 +44,7 @@ export const CureconText = styled.a`
   }
 `
 
-export const NavButton = styled.a`
+export const NavButton = styled(Link)`
   margin-left: 2rem;
   color: #fff;
   text-decoration: none;
@@ -52,25 +54,27 @@ export const NavButton = styled.a`
   font-weight: 700;
   word-spacing: 2px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &:hover{
     color: #ffdd2c;
   }
 
-  &:after{
-    content: '';
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    background: #ffdd2c;
-    transition: 0.25s;
-  }
+  // &:after{
+  //   content: '';
+  //   height: 2px;
+  //   position: absolute;
+  //   bottom: -5px;
+  //   left: 0;
+  //   width: 0%;
+  //   background: #ffdd2c;
+  //   transition: 0.25s;
+  // }
 
-  &:hover:after{
-    width: 100%;
-  }
+  // &:hover:after{
+  //   width: 100%;
+  // }
 `
 
 export const EmojiImage = styled.img`
@@ -97,4 +101,8 @@ export const MobileMenu = styled.div`
   @media screen and (min-width: 1401px) {
     display: none;
   }
+`
+
+export const IconDiv = styled.div`
+  margin-right: 8px;
 `

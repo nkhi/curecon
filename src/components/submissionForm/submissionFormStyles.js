@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import { mainYellow, shade, offShade, modalRed, pineGreen } from '../../colorPalette'
 
 //icons
 import FaceIcon from '@material-ui/icons/Face';
+import { AboutLinkArea } from '../../pages/homepage/footer/footerStyles';
 
 export const GridContainer = styled.div`
   height: 540px;
@@ -150,11 +152,11 @@ export const Label = styled.div`
 `
 
 export const DisclaimerText = styled.div`
-  font-size: 0.8em;
+  font-size: 0.71em;
   color: ${offShade};
 `
 
-export const Link = styled.a`
+export const Hyperlink = styled(Link)`
   text-decoration: none;
   color: ${shade};
 
@@ -163,7 +165,7 @@ export const Link = styled.a`
   }
 `
 
-export const BlandLink = styled(Link)`
+export const BlandLink = styled(Hyperlink)`
   &:hover{
     text-decoration: none;
   }

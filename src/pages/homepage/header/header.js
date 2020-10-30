@@ -12,8 +12,10 @@ import {
   NavButton,
   ButtonsContainer,
   EmojiImage,
-  MobileMenu
+  MobileMenu,
+  IconDiv
 } from './headerStyles'
+import {MapPin, MagnifyingGlass, Megaphone, Question, } from 'phosphor-react'
 
 const Header = () => {
 
@@ -78,29 +80,24 @@ const Header = () => {
       </MobileMenu>
 
       <ButtonsContainer>
-        <NavButton href="/map">
+        <NavButton to="/map">
           {/* <Emoji margin symbol="📍" label="Location Pin"/>  */}
+          <IconDiv><MapPin size={20} weight="duotone" /></IconDiv>
           World Map
         </NavButton>
-        <NavButton onClick={handleOpen()}>
+        <NavButton to="/schools">
           {/* <Emoji margin symbol="🏫" label="School Building"/>  */}
+          <IconDiv><MagnifyingGlass size={20} weight="duotone" /></IconDiv>
           Find your school
         </NavButton>
-        {/* Search Container */}
-        <Modal 
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-        >
-          {body}
-        </Modal>
-        <NavButton href="/submit">
+        <NavButton to="/submit">
           {/* <Emoji margin symbol="🎙" label="Microphone"/>  */}
+          <IconDiv><Megaphone size={20} weight="duotone" /></IconDiv>
           Submit
         </NavButton>
-        <NavButton href="/about">
+        <NavButton to="/about">
           {/* <Emoji margin symbol="🤓" label="Nerd"/> */}
+          <IconDiv><Question size={24} weight="duotone" /></IconDiv>
           About
         </NavButton>
       </ButtonsContainer>

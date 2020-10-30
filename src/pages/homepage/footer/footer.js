@@ -6,61 +6,84 @@ import Emoji from '../../../components/emoji'
 //styles
 import {
    GridContainer,
-   CureconTextSection,
-   Links,
-    WorldMapLinkArea,
-    SchoolLinkArea,
-    AboutLinkArea,
-    SubmitLinkArea,
-   Disclaimer,
-   EmojiSection,
-   EmojiImage,
-   Link,
+  //  CureconTextSection,
+  //  Links,
+    Map,
+    School,
+    About,
+    Submit,
+   Message,
+  //  EmojiSection,
+  //  EmojiImage,
+   Hyperlink,
    NavLink,
+   IconDiv
 } from './footerStyles'
 import { CureconText } from '../header/headerStyles' 
+import {MapPin, MagnifyingGlass, Megaphone, Question, } from 'phosphor-react'
 
 const Footer = () => {
   return(
+    // <GridContainer>
+    //   <EmojiSection>
+    //     <EmojiImage src={require('./assets/mask.png')}/>
+    //   </EmojiSection>
+    //   <CureconTextSection>
+    //     <CureconText>
+    //       COVID-19 University <br/>Response Consolidation
+    //     </CureconText>
+    //   </CureconTextSection>
+    //   <Links>
+    //     <WorldMapLinkArea>
+
+    //     </WorldMapLinkArea>
+    //     <SchoolLinkArea>
+
+    //     </SchoolLinkArea>
+    //     <SubmitLinkArea>
+
+    //     </SubmitLinkArea>
+    //     <AboutLinkArea>
+
+    //     </AboutLinkArea>
+    //   </Links>
+    //   <Disclaimer>
+    //     
+    //   </Disclaimer>
+    // </GridContainer>
     <GridContainer>
-      <EmojiSection>
-        <EmojiImage src={require('./assets/mask.png')}/>
-      </EmojiSection>
-      <CureconTextSection>
-        <CureconText id="swap">
-          COVID-19 University <br/>Response Consolidation
-        </CureconText>
-      </CureconTextSection>
-      <Links>
-        <WorldMapLinkArea>
-          <NavLink href='/map'>
-            <Emoji margin symbol="📍" label="Location Pin"/> 
-            World Map
-          </NavLink>
-        </WorldMapLinkArea>
-        <SchoolLinkArea>
-          <NavLink href='/schools'>
-            <Emoji margin symbol="🏫" label="School Building"/> 
-            Find your school
-          </NavLink>
-        </SchoolLinkArea>
-        <SubmitLinkArea>
-          <NavLink href='/submit'>
-            <Emoji margin symbol="🎙" label="Microphone"/>
-            Submit
-          </NavLink>
-        </SubmitLinkArea>
-        <AboutLinkArea>
-          <NavLink href='/about'>
-            <Emoji margin symbol="🤓" label="Nerd"/> 
-            About
-          </NavLink>
-        </AboutLinkArea>
-      </Links>
-      <Disclaimer>
-        DISCLAIMER: This project was funded by 
-        <Link href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> a University of Toronto research grant</Link>.  
-      </Disclaimer>
+      <Map>
+        <NavLink to='/map'>
+          {/* <Emoji margin symbol="📍" label="Location Pin"/>  */}
+          <IconDiv><MapPin size={24} weight="duotone" /></IconDiv>
+          World Map
+        </NavLink>
+      </Map>
+      <School>
+        <NavLink to='/schools'>
+          {/* <Emoji margin symbol="🏫" label="School Building"/>  */}
+          <IconDiv><MagnifyingGlass size={24} weight="duotone" /></IconDiv>
+          Find your school
+        </NavLink>
+      </School>
+      <Submit>
+        <NavLink to='/submit'>
+           {/* <Emoji margin symbol="🎙" label="Microphone"/> */}
+           <IconDiv><Megaphone size={24} weight="duotone" /></IconDiv>
+           Submit
+        </NavLink>
+      </Submit>
+      <About>
+        <NavLink to='/about'>
+          {/* <Emoji margin symbol="🤓" label="Nerd"/>  */}
+          <IconDiv><Question size={24} weight="duotone" /></IconDiv>
+          About
+        </NavLink>
+      </About>
+      <Message>
+        <Hyperlink href='https://global.utoronto.ca/u-of-t-covid-19-student-engagement-award-winners/'> 🐿️ This project was funded by a University of Toronto research grant. </Hyperlink> 
+        <Hyperlink href="mailto:hey@curecon.org?subject=Support%20Request%3A">📨  hey@curecon.org</Hyperlink> 
+      </Message>
     </GridContainer>
   )
 }

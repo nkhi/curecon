@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { mainDark } from '../../../colorPalette'
 
 export const Layout = styled.div`
-  width: 100%;
+  max-width: 100vw;
   /* background-color: #aad3df; */
   background-color: #89c8db;
   overflow: hidden;
