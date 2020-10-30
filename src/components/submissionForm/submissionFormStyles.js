@@ -145,10 +145,10 @@ export const Label = styled.div`
   font-size: 0.8em;
   text-align: left;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 8px;
   color: ${shade};
-  font-weight: 'Rubik';
+  font-family: 'Inter';
 `
 
 export const DisclaimerText = styled.div`

@@ -35,20 +35,16 @@ export const ExploreMapButton = styled(ReadPaperButton)`
 export const TextSection = styled.div`
   display: flex;
   font-family: 'Helvetica-Bold', 'Source Sans Pro', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.55rem;
   justify-content: center;
   width: 100vw;
-  color: ${shade};
+  color: #000;
 
   @media screen and (max-width: 1645px) {
     text-align: center;
     font-size: 2.8rem;
     width: 100%;
   }
-
-  /* @media screen and (max-width: 1390px) {
-    margin-bottom: 2rem;
-  } */
 `
 
 export const GridContainer = styled.div`
@@ -101,9 +97,10 @@ export const PaperDownload = styled.div`
 export const Blurb = styled.div`
   color: ${shade};
   text-align: right;
-  font-size: 1.51em;
+  font-size: 1.4em;
   padding-top: 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', 'Rubik', sans-serif;
+  font-weight: 500;
 
   @media screen and (max-width: 1570px) {
     text-align: center;

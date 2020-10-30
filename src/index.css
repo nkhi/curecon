@@ -14,12 +14,10 @@ code {
 
 @font-face {
   font-family: 'Helvetica-Bold';
-  src: local('Helvetica-Bold'), url(./fonts/Helvetica-Bold-Font.ttf) format('truetype');
+  src: local('Helvetica-Bold'), url('./fonts/Helvetica-Bold-Font.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Inter-Bold';
-  src: local('Inter-Bold'),
-       url(./fonts/Inter/Inter-Bold.woff2) format('woff2'), /* Super Modern Browsers */
-       url(./fonts/Inter/Inter-Bold.woff) format('woff'), /* Pretty Modern Browsers */
+  font-family: 'Inter';
+  src: local('Inter'), url('./fonts/Inter.ttf') format('truetype');
 }

@@ -31,8 +31,8 @@ export const ButtonsContainer = styled.div`
 
 export const CureconText = styled(Link)`
   font-weight: 700;
-  font-size: 1.25em;
-  font-family: 'Inter-Bold', 'Space Mono', monospace;
+  font-size: 1.3em;
+  font-family: 'Space Mono', monospace;
   font-style: normal;
   text-align: left;
   line-height: 1.5rem;
