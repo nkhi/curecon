@@ -161,6 +161,13 @@ export const Hyperlink = styled.a`
   &:hover{
     color: #ffdd2c;
   }
+
+  display: flex;
+  align-items: center;
+
+  &:last-child{
+    margin-top: 0.25rem;
+  }
 `
 
 export const NavLink = styled(Link)`
@@ -213,4 +220,9 @@ export const NavButton = styled.a`
 
 export const IconDiv = styled.div`
   margin-right: 8px;
+`
+
+export const IconDiv2 = styled.div`
+  margin-right: 4px;
+  display: flex;
 `
