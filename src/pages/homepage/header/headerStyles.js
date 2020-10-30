@@ -79,7 +79,6 @@ export const NavButton = styled(Link)`
 
 export const EmojiImage = styled.img`
   max-width: 4rem;
-  margin-right: 1rem;
 
   &:hover{
     @keyframes App-logo-spin {
@@ -105,4 +104,8 @@ export const MobileMenu = styled.div`
 
 export const IconDiv = styled.div`
   margin-right: 8px;
+`
+
+export const ImageLink = styled(Link)`
+  margin-right: 1rem;
 `

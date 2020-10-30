@@ -2,38 +2,43 @@ import styled from 'styled-components';
 import { mainWhite, shade } from '../../../colorPalette'
 
 export const Layout = styled.div`
-  height: 100vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2fr;
-  gap: 1px 1px;
-  grid-template-areas: "Title" "Rest";
-  background: linear-gradient(180deg, #fff 0%,rgb(223, 224, 227) 100%);
+  background: #f1f1f1;
 `
 
 export const TitleSection = styled.div`
-  grid-area: Title;
-  /* display: flex;
+  height: 35rem;
+  display: flex;
   justify-content: center;
   place-items: center;
-  flex-flow: column; */
+  flex-flow: column;
 `
 
 export const MeetTheTeam = styled.div`
-  grid-area: Rest;
   display: grid;
   grid-template-columns: 5rem 1fr 1fr 1fr 5rem;
   grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
   gap: 3rem 2rem;
   grid-template-areas: ". Banner Banner Banner ." ". A B C ." ". D E F ." ". G H . ." " . . . . .";
+  /* height: 80rem; */
 `
 
 
 export const Nikhi = styled.div`
   grid-area: A;
-  border: 1px solid black;
-  border-radius: 15px;
-  background: ${shade};
+  border-radius: 25px;
+  padding: 15px;
+  background: #fff;
+  height: 28rem;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  transition: .2s all;
+
+  /* Blue Teal Green gradient*/
+  /* background: rgb(45,184,253);
+  background: -moz-linear-gradient(150deg, rgba(45,184,253,1) 0%, rgba(43,213,190,1) 35%, rgba(32,227,148,1) 100%);
+  background: -webkit-linear-gradient(150deg, rgba(45,184,253,1) 0%, rgba(43,213,190,1) 35%, rgba(32,227,148,1) 100%);
+  background: linear-gradient(150deg, rgba(45,184,253,1) 0%, rgba(43,213,190,1) 35%, rgba(32,227,148,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2db8fd",endColorstr="#20e394",GradientType=1); */
 `
 
 export const Zain = styled(Nikhi)`
@@ -78,6 +83,7 @@ export const TitlePart = styled.div`
   font-family: 'Merriweather', serif;
   font-weight: 700;
   padding: 3rem;
+
 `
 
 export const SubtitlePart = styled.div`
@@ -85,6 +91,7 @@ export const SubtitlePart = styled.div`
   font-family: 'Rubik';
   text-align: center;
   padding: 0 20rem;
+  margin-bottom: 5rem;
 `
 
 export const SubHeading = styled.div`
