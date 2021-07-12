@@ -8,12 +8,3 @@ To run locally:
 - `git pull https://github.com/nkhi/curecon`
 - `npm i && npm start`
 
-**Visit it here: http://uofcov.id**
-
-## Features still outstanding:
-- Landing Call To Action Text to cycle through multiple languages
-- Landing Call To Action "your school" animated underline resembling sharpie/pencil after a short delay
-- SchoolsList links (curecon.org/school/{schoolName}) needs to be set up to handle no schoolName part
-- About page, School Data Page, Submission Page need to be made
-- Submission of form data to DB needs to be configured
-- Mobile CSS is not setup for any of the components, need to add page container to handle media querying
